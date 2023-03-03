@@ -1,29 +1,35 @@
 import os
-from datetime import datetime
+from datetime import datetime,timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from airflow.sensors.time_delta import TimeDeltaSensor
 from airflow.operators.empty import EmptyOperator
 from airflow.sensors.filesystem import FileSensor
 from airflow.hooks.filesystem import FSHook
 from airflow.models import Variable
+from airflow.utils import timezone
 from airflow.providers.google.cloud.sensors.bigquery import BigQueryTableExistenceSensor, BigQueryTablePartitionExistenceSensor
-
+import time
 import yaml
 
 # local imports
-from rg_work import
+from webscrape import scrape_yahoo, open_raw_yahoo_transform, close_raw_yahoo_transform, stg_file_setup
+
+def sleep_delay():
+    time.sleep(23400)
 
 # DAG definition
 # -----------------------------------------
 
 with DAG(
     dag_id='bitcoin_prediction',
-    schedule_interval='@once',
-    start_date=datetime.utcnow(),
+    schedule_interval='30 14 * * *',
+    start_date=datetime(2022, 3, 6, 13, 0),
     catchup=False,
     default_view='graph',
     is_paused_upon_creation=True,
     tags=['dsa', 'data-loaders'],
+    target_time=(timezone.utcnow()+timedelta(minutes=SLEEP_MINUTES_1ST)).time(),
     default_args={
         'depends_on_past': False,
         'email': ['airflow@example.com'],
@@ -39,4 +45,44 @@ with DAG(
     print(__file__)
     # pre-check task
 
-    #check number 1 if each of the stocks and bitcoin files are in the data_dir
+    webscrape_task_1 = PythonOperator(
+        task_id='scrape_open_bitcoin_price',
+        python_callable = scrape_yahoo,
+        doc_md = scrape_yahoo.__doc__        
+    )
+
+    transform_open_pricing_task = PythonOperator(
+        task_id='transform_open_webscrape_pricing',
+        python_callable = open_raw_yahoo_transform,
+        doc_md = open_raw_yahoo_transform.__doc__        
+    )
+
+    sleep_minutes = 390
+    sleep_task = TimeDeltaSensor(
+        task_id='sleep_until_2nd_scrape',
+        delta= timedelta(minutes=sleep_minutes),
+        mode = 'reschedule'
+    )
+
+    webscrape_task_2 = PythonOperator(
+        task_id='scrape_close_bitcoin_price',
+        python_callable = scrape_yahoo,
+        doc_md = scrape_yahoo.__doc__        
+    )
+
+    transform_close_pricing = PythonOperator(
+        task_id='transform_close_webscrape_pricing',
+        python_callable = close_raw_yahoo_transform,
+        doc_md = close_raw_yahoo_transform.__doc__        
+    )
+
+    stg_file_creation = PythonOperator(
+        task_id='combine_open_close_pricing',
+        python_callable = stg_file_setup,
+        doc_md = stg_file_setup.__doc__
+    )
+
+
+
+
+    
