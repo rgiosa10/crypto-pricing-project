@@ -14,6 +14,7 @@ import yaml
 
 # local imports
 from webscrape import scrape_yahoo, open_raw_yahoo_transform, close_raw_yahoo_transform, stg_file_setup
+from history import hist_transf
 
 def sleep_delay():
     time.sleep(23400)
@@ -29,7 +30,6 @@ with DAG(
     default_view='graph',
     is_paused_upon_creation=True,
     tags=['dsa', 'data-loaders'],
-    target_time=(timezone.utcnow()+timedelta(minutes=SLEEP_MINUTES_1ST)).time(),
     default_args={
         'depends_on_past': False,
         'email': ['airflow@example.com'],
@@ -44,6 +44,12 @@ with DAG(
 
     print(__file__)
     # pre-check task
+
+    history_data_task = PythonOperator(
+        task_id='get_transform_historical_data',
+        python_callable = hist_transf,
+        doc_md = hist_transf.__doc__        
+    )
 
     webscrape_task_1 = PythonOperator(
         task_id='scrape_open_bitcoin_price',
@@ -61,6 +67,7 @@ with DAG(
     sleep_task = TimeDeltaSensor(
         task_id='sleep_until_2nd_scrape',
         delta= timedelta(minutes=sleep_minutes),
+        target_time=(datetime.utcnow()+timedelta(minutes=sleep_minutes)).time(),
         mode = 'reschedule'
     )
 
@@ -82,7 +89,11 @@ with DAG(
         doc_md = stg_file_setup.__doc__
     )
 
+    #create_bq_dataset_task
 
+    #load_table_bq_task
 
+#task flow
+history_data_task >> webscrape_task_1 >> transform_open_pricing_task >> sleep_task >> webscrape_task_2 >> transform_close_pricing >> stg_file_creation
 
     
