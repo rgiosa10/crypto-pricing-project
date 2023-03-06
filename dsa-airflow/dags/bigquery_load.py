@@ -1,8 +1,8 @@
 from airflow.models import Variable
-from airflow.hooks.filesystem import FSHook
+#from airflow.hooks.filesystem import FSHook
 import pandas as pd
 from google.cloud import bigquery
-from google.oauth2 import service_account
+#from google.oauth2 import service_account
 from google.cloud.exceptions import NotFound
 import yaml
 import os
@@ -55,18 +55,18 @@ TABLE_SCHEMA = [
     bigquery.SchemaField('open', 'FLOAT', mode='NULLABLE'),
     bigquery.SchemaField('close', 'FLOAT', mode='NULLABLE'),
     bigquery.SchemaField('volume', 'FLOAT', mode='NULLABLE'),
-    ]
+]
 
 #------------------------------------------------
 #function to create dataset in BigQuery
 #------------------------------------------------
 def create_dataset():
-    if client.get_dataset(dataset_id) == NotFound:
+    try:
+        client.get_dataset(dataset_id)
+    except NotFound:
         dataset = bigquery.Dataset(dataset_id)
         dataset.location = "US"
         dataset = client.create_dataset(dataset, exists_ok=True)
-    else:
-        pass
 
 #------------------------------------------------
 #functions to create and load tables in BigQuery
