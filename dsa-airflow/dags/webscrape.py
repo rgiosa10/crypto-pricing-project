@@ -13,6 +13,13 @@ import re
 import json
 import dateutil
 import numpy as np
+from bigquery_load import data_dir
+
+_default_config_path = '/opt/airflow/dags/config.yml'
+CONF_PATH = Variable.get('config_file', default_var=_default_config_path)
+config: dict = {}
+with open(CONF_PATH) as open_yaml:
+    config: dict =  yaml.full_load(open_yaml)
 
 crypto = {
     'yahoo' : 'https://finance.yahoo.com/crypto/',
@@ -84,7 +91,7 @@ def scrape_yahoo():
     #if os.path.isfile('./data/yahoo.csv'):  
         #df.to_csv('./data/raw_yahoo.csv', header=False, mode='a')
     #else:
-    df.to_csv('./data/raw_yahoo.csv', header=True)
+    df.to_csv(os.path.join(data_dir,config['raw_yahoo']), header=True)
 
 
 def symbol_clean(col):
@@ -93,7 +100,7 @@ def symbol_clean(col):
     return sym
 
 def open_raw_yahoo_transform():
-    raw_y_df = pd.read_csv('./data/raw_yahoo.csv', header=0)
+    raw_y_df = pd.read_csv(os.path.join(data_dir,config['raw_yahoo']), header=0)
 
     raw_old_names = [
         'Symbol', 
@@ -139,7 +146,7 @@ def open_raw_yahoo_transform():
 
     raw_y_df = raw_y_df[['date','symbol', 'open_price', 'close_price','volume_24h', 'open_created_at', 'close_created_at']]
 
-    raw_y_df.to_csv('./data/stg_data.csv', header=True)
+    raw_y_df.to_csv(os.path.join(data_dir,config['stg_data']), header=True)
 
 
 def raw_clean_vol(row):
@@ -152,7 +159,7 @@ def raw_clean_vol(row):
 
 
 def close_raw_yahoo_transform():
-    raw_y_df = pd.read_csv('./data/raw_yahoo.csv', header=0)
+    raw_y_df = pd.read_csv(os.path.join(data_dir,config['raw_yahoo']), header=0)
 
     raw_old_names = [
         'Symbol', 
@@ -198,11 +205,11 @@ def close_raw_yahoo_transform():
 
     raw_y_df = raw_y_df[['date','symbol', 'open_price', 'close_price','volume_24h', 'open_created_at', 'close_created_at']]
 
-    raw_y_df.to_csv('./data/stg_data.csv', header=False, mode='a')
+    raw_y_df.to_csv(os.path.join(data_dir,config['stg_data']), header=False, mode='a')
 
 
 def stg_file_setup():
-    df = pd.read_csv('./data/stg_data.csv', header=0)
+    df = pd.read_csv(os.path.join(data_dir,config['stg_data']), header=0)
 
     df = df.replace('NAN',np.nan) #If necessary
     df = df.groupby(['date','symbol'], as_index=False).first()
@@ -219,4 +226,4 @@ def stg_file_setup():
     df = df.rename(columns=rename_dict)
 
     # need to finish up appending this to the historical table
-    return df.head()
+    df.to_csv(os.path.join(data_dir,config["bitcoin_consolidated"]), header=False, mode='a')

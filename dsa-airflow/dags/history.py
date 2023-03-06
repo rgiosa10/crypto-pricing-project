@@ -11,6 +11,13 @@ import json
 import dateutil
 import numpy as np
 
+from bigquery_load import data_dir
+
+_default_config_path = '/opt/airflow/dags/config.yml'
+CONF_PATH = Variable.get('config_file', default_var=_default_config_path)
+config: dict = {}
+with open(CONF_PATH) as open_yaml:
+    config: dict =  yaml.full_load(open_yaml)
 
 # functions to be used for transformations
 #---------------------------------------------------
@@ -38,7 +45,7 @@ def inv_clean_vol(row):
 def hist_transf():
     # cleaning and transformations for historical data from kaggle
     #---------------------------------------------------
-    old_price_df = pd.read_csv('./data/BTC_4_13_2021.csv', header=0)
+    old_price_df = pd.read_csv(os.path.join(data_dir,config['kaggle_data']), header=0)
 
     old_old_names = ['Date','Open','High','Low','Close','Adj Close','Volume']
     old_new_names = ['date','open','high','low','close','adj_close','volume']
@@ -58,7 +65,7 @@ def hist_transf():
     # cleaning and transformations for historical data from investing.com
     #---------------------------------------------------
 
-    invest_df = pd.read_csv('./data/Bitcoin Historical Data - Investing.com.csv', header=0)
+    invest_df = pd.read_csv(os.path.join(data_dir,config['invest_data']), header=0)
 
     inv_old_names = ["Date","Price","Open","High","Low","Vol.","Change %"]
     inv_new_names = ['date', 'close', 'open','high','low','volume', 'chge_percent']
@@ -81,7 +88,7 @@ def hist_transf():
 
     hist_df.set_index('date', inplace=True)
 
-    file_path = './data/combined_BTC_hist_pricing.csv'
+    file_path = os.path.join(data_dir,'combined_BTC_hist_pricing.csv')
 
     if os.path.exists(file_path):
         pass

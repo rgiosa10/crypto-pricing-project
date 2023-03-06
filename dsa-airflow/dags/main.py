@@ -26,7 +26,7 @@ sleep_minutes = 390
 with DAG(
     dag_id='bitcoin_first_webscrape',
     schedule_interval='30 6 * * *',
-    start_date=datetime(2022, 3, 6, 0, 0, 0, 0, tz=tzlocal),
+    start_date=datetime(2022, 3, 6),
     catchup=False,
     default_view='graph',
     is_paused_upon_creation=True,
@@ -67,7 +67,7 @@ with DAG(
 with DAG(
     dag_id='bitcoin_second_webscrape',
     schedule_interval='00 13 * * *',
-    start_date=datetime(2022, 3, 6, 0, 0, 0, 0, tz=tzlocal),
+    start_date=datetime(2022, 3, 6),
     catchup=False,
     default_view='graph',
     is_paused_upon_creation=True,
@@ -127,6 +127,8 @@ with DAG(
     )
 
 #task flow
-history_data_task >> webscrape_task_1 >> transform_open_pricing_task >> webscrape_task_2 >> transform_close_pricing >> stg_file_creation >> create_dataset_task >> create_table_task 
+history_data_task >> webscrape_task_1 >> transform_open_pricing_task
+
+webscrape_task_2 >> transform_close_pricing >> stg_file_creation >> create_dataset_task >> create_table_task 
 
     

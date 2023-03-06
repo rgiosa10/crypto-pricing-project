@@ -1,0 +1,25 @@
+[2023-03-06T23:02:04.703+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bitcoin_second_webscrape.scrape_close_bitcoin_price scheduled__2023-03-05T13:00:00+00:00 [queued]>
+[2023-03-06T23:02:04.781+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bitcoin_second_webscrape.scrape_close_bitcoin_price scheduled__2023-03-05T13:00:00+00:00 [queued]>
+[2023-03-06T23:02:04.783+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-06T23:02:04.786+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-03-06T23:02:04.788+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-06T23:02:04.857+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): scrape_close_bitcoin_price> on 2023-03-05 13:00:00+00:00
+[2023-03-06T23:02:04.885+0000] {standard_task_runner.py:55} INFO - Started process 286 to run task
+[2023-03-06T23:02:04.913+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'bitcoin_second_webscrape', 'scrape_close_bitcoin_price', 'scheduled__2023-03-05T13:00:00+00:00', '--job-id', '105', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpdsae187b']
+[2023-03-06T23:02:04.924+0000] {standard_task_runner.py:83} INFO - Job 105: Subtask scrape_close_bitcoin_price
+[2023-03-06T23:02:05.457+0000] {task_command.py:388} INFO - Running <TaskInstance: bitcoin_second_webscrape.scrape_close_bitcoin_price scheduled__2023-03-05T13:00:00+00:00 [running]> on host 12a6d3b9daec
+[2023-03-06T23:02:05.825+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bitcoin_second_webscrape
+AIRFLOW_CTX_TASK_ID=scrape_close_bitcoin_price
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-05T13:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-05T13:00:00+00:00
+[2023-03-06T23:02:08.188+0000] {logging_mixin.py:137} INFO - ['W(100%)']
+[2023-03-06T23:02:10.328+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-06T23:02:10.576+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=bitcoin_second_webscrape, task_id=scrape_close_bitcoin_price, execution_date=20230305T130000, start_date=20230306T230204, end_date=20230306T230210
+[2023-03-06T23:02:11.668+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-03-06T23:02:11.951+0000] {taskinstance.py:2578} INFO - 1 downstream tasks scheduled from follow-on schedule check

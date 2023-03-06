@@ -21,7 +21,7 @@ with open(CONF_PATH) as open_yaml:
 #data_fs = FSHook(conn_id='data_fs')     # get airflow connection for data_fs
 #data_dir = data_fs.get_path()
 
-data_dir = '../data/'
+data_dir = './data/'
 
 #------------------------------------------------
 #Initialize spark for ETL to parquet files
@@ -39,15 +39,16 @@ data_dir = '../data/'
 #------------------------------------------------
 PROJECT_NAME = config['project']
 DATASET_NAME = config['dataset']
+TABLE_NAME = config['table']
 
 #create bigquery client
 client = bigquery.Client()
 
 #create dataset_id and table_ids
 dataset_id = f"{PROJECT_NAME}.{DATASET_NAME}"
-table_id = f"{PROJECT_NAME}.{DATASET_NAME}.bitcoin_pricing"
+table_id = f"{PROJECT_NAME}.{DATASET_NAME}.{TABLE_NAME}"
 
-#schemas for tables to be loaded
+#schema for tables to be loaded
 TABLE_SCHEMA = [
     bigquery.SchemaField('date', 'DATE', mode='REQUIRED'),
     bigquery.SchemaField('symbol', 'STRING', mode='NULLABLE'),
