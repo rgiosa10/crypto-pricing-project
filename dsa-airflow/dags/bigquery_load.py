@@ -45,7 +45,7 @@ client = bigquery.Client()
 
 #create dataset_id and table_ids
 dataset_id = f"{PROJECT_NAME}.{DATASET_NAME}"
-bitcoin_table_id = f"{PROJECT_NAME}.{DATASET_NAME}.bitcoin_pricing"
+table_id = f"{PROJECT_NAME}.{DATASET_NAME}.bitcoin_pricing"
 
 #schemas for tables to be loaded
 TABLE_SCHEMA = [
@@ -66,3 +66,22 @@ def create_dataset():
         dataset = client.create_dataset(dataset, exists_ok=True)
     else:
         pass
+
+#------------------------------------------------
+#functions to create and load tables in BigQuery
+#------------------------------------------------
+def create_table():
+    job_config = bigquery.LoadJobConfig(
+            source_format=bigquery.SourceFormat.CVS,
+            autodetect=True,
+            create_disposition='CREATE_NEVER',
+            write_disposition='WRITE_TRUNCATE',
+            ignore_unknown_values=True,
+        )
+    table = bigquery.Table(table_id, schema=TABLE_SCHEMA)
+    table = client.create_table(table, exists_ok=True)
+
+    with open(os.path.join(data_dir, config['bitcoin_consolidated']), "rb") as source_file:
+        job = client.load_table_from_file(source_file, table_id, job_config=job_config)
+
+    job.result()
