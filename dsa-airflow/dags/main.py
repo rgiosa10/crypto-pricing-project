@@ -16,8 +16,7 @@ import yaml
 from webscrape import scrape_yahoo, open_raw_yahoo_transform, close_raw_yahoo_transform, stg_file_setup
 from history import hist_transf
 
-def sleep_delay():
-    time.sleep(23400)
+sleep_minutes = 390
 
 # DAG definition
 # -----------------------------------------
@@ -63,10 +62,8 @@ with DAG(
         doc_md = open_raw_yahoo_transform.__doc__        
     )
 
-    sleep_minutes = 390
     sleep_task = TimeDeltaSensor(
         task_id='sleep_until_2nd_scrape',
-        delta= timedelta(minutes=sleep_minutes),
         target_time=(datetime.utcnow()+timedelta(minutes=sleep_minutes)).time(),
         mode = 'reschedule'
     )
