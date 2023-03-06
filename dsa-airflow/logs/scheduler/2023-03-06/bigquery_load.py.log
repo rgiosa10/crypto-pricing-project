@@ -1,0 +1,500 @@
+[2023-03-06T17:08:13.192+0000] {processor.py:153} INFO - Started process (PID=47) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:08:13.196+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T17:08:13.200+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:13.200+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:08:19.354+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:19.354+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:08:22.360+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:22.360+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2023-03-06T17:08:22.376+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:22.376+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:08:22.379+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:22.378+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:08:22.417+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:22.380+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/bigquery_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:08:22.420+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:08:22.469+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 9.288 seconds
+[2023-03-06T17:08:53.869+0000] {processor.py:153} INFO - Started process (PID=113) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:08:54.058+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T17:08:54.094+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:54.094+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:08:59.378+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:59.378+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:08:59.390+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:59.390+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:08:59.400+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:59.399+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:08:59.404+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:59.403+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:08:59.417+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:59.406+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/bigquery_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:08:59.421+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:08:59.460+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 6.280 seconds
+[2023-03-06T17:09:29.716+0000] {processor.py:153} INFO - Started process (PID=196) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:09:29.721+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T17:09:29.724+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:29.723+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:09:30.364+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:30.364+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:09:30.371+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:30.371+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:09:30.376+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:30.376+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:09:30.378+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:30.378+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:09:30.384+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:30.379+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/bigquery_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:09:30.387+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:09:30.402+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.692 seconds
+[2023-03-06T17:10:00.784+0000] {processor.py:153} INFO - Started process (PID=260) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:10:00.792+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T17:10:00.796+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:00.796+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:10:05.295+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:05.294+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:10:08.305+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:08.304+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2023-03-06T17:10:08.330+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:08.330+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:10:08.331+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:08.331+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:10:08.341+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:08.333+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/bigquery_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:10:08.356+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:10:08.388+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 7.625 seconds
+[2023-03-06T17:10:39.129+0000] {processor.py:153} INFO - Started process (PID=333) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:10:39.134+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T17:10:39.139+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:39.139+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:10:43.092+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:43.092+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:10:43.099+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:43.098+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:10:43.104+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:43.104+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:10:43.107+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:43.107+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:10:43.125+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:43.109+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/bigquery_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:10:43.128+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:10:43.153+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 4.033 seconds
+[2023-03-06T17:11:13.630+0000] {processor.py:153} INFO - Started process (PID=399) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:11:13.639+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T17:11:13.643+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:13.643+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:11:18.462+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:18.462+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:11:18.473+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:18.473+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:11:18.498+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:18.492+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:11:18.503+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:18.503+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:11:18.593+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:18.534+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/bigquery_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:11:18.597+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:11:18.636+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 5.023 seconds
+[2023-03-06T17:11:49.428+0000] {processor.py:153} INFO - Started process (PID=465) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:11:49.433+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T17:11:49.436+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:49.436+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:11:53.581+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:53.580+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:11:56.587+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:56.586+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2023-03-06T17:11:56.592+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:56.592+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:11:56.595+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:56.594+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:11:56.603+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:56.597+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/bigquery_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:11:56.605+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:11:56.622+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 7.200 seconds
+[2023-03-06T17:12:26.867+0000] {processor.py:153} INFO - Started process (PID=555) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:12:26.871+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T17:12:26.873+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:26.873+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:12:30.651+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:30.651+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:12:30.665+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:30.665+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:12:30.673+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:30.672+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:12:30.675+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:30.675+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:12:30.688+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:30.678+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/bigquery_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:12:30.691+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:12:30.712+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 3.853 seconds
+[2023-03-06T17:13:01.171+0000] {processor.py:153} INFO - Started process (PID=629) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:13:01.174+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T17:13:01.178+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:01.177+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:13:05.187+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:05.186+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:13:05.193+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:05.192+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:13:05.197+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:05.197+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:13:05.200+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:05.199+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:13:05.207+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:05.202+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/bigquery_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:13:05.210+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:13:05.228+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 4.065 seconds
+[2023-03-06T17:13:35.455+0000] {processor.py:153} INFO - Started process (PID=708) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:13:35.458+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T17:13:35.461+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:35.461+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:13:39.286+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:39.286+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:13:39.292+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:39.292+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:13:39.298+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:39.295+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:13:39.301+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:39.300+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:13:39.311+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:39.304+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/bigquery_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:13:39.315+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T17:13:39.333+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 3.884 seconds
+[2023-03-06T18:50:09.925+0000] {processor.py:153} INFO - Started process (PID=47) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:50:09.942+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:50:09.952+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:50:09.952+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:50:13.499+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:50:13.523+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 3.603 seconds
+[2023-03-06T18:50:43.798+0000] {processor.py:153} INFO - Started process (PID=112) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:50:43.801+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:50:43.803+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:50:43.803+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:50:44.582+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:50:44.590+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.797 seconds
+[2023-03-06T18:51:14.667+0000] {processor.py:153} INFO - Started process (PID=178) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:51:14.671+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:51:14.673+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:51:14.673+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:51:15.531+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:51:15.543+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.881 seconds
+[2023-03-06T18:51:45.894+0000] {processor.py:153} INFO - Started process (PID=246) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:51:45.899+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:51:45.901+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:51:45.901+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:51:47.250+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:51:47.283+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.397 seconds
+[2023-03-06T18:52:17.738+0000] {processor.py:153} INFO - Started process (PID=315) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:52:17.743+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:52:17.746+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:52:17.746+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:52:19.059+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:52:19.072+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.339 seconds
+[2023-03-06T18:52:49.526+0000] {processor.py:153} INFO - Started process (PID=399) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:52:49.529+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:52:49.533+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:52:49.532+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:52:52.437+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:52:52.453+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.937 seconds
+[2023-03-06T18:53:22.552+0000] {processor.py:153} INFO - Started process (PID=469) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:53:22.557+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:53:22.561+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:53:22.561+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:53:24.884+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:53:24.907+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.367 seconds
+[2023-03-06T18:53:55.604+0000] {processor.py:153} INFO - Started process (PID=539) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:53:55.608+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:53:55.611+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:53:55.611+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:53:56.615+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:53:56.625+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.029 seconds
+[2023-03-06T18:54:27.106+0000] {processor.py:153} INFO - Started process (PID=606) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:54:27.108+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:54:27.110+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:54:27.110+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:54:28.066+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:54:28.081+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.982 seconds
+[2023-03-06T18:54:58.943+0000] {processor.py:153} INFO - Started process (PID=686) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:54:58.951+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:54:58.955+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:54:58.955+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:55:00.236+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:55:00.252+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.325 seconds
+[2023-03-06T18:55:31.052+0000] {processor.py:153} INFO - Started process (PID=760) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:55:31.057+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:55:31.059+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:55:31.059+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:55:31.998+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:55:32.007+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.963 seconds
+[2023-03-06T18:56:02.629+0000] {processor.py:153} INFO - Started process (PID=828) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:56:02.632+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:56:02.634+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:56:02.634+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:56:03.706+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:56:03.717+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.094 seconds
+[2023-03-06T18:56:33.967+0000] {processor.py:153} INFO - Started process (PID=896) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:56:33.970+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:56:33.972+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:56:33.972+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:56:34.975+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:56:34.984+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.025 seconds
+[2023-03-06T18:57:05.137+0000] {processor.py:153} INFO - Started process (PID=978) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:57:05.140+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:57:05.144+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:57:05.143+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:57:06.101+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:57:06.112+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.983 seconds
+[2023-03-06T18:57:38.062+0000] {processor.py:153} INFO - Started process (PID=1045) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:57:38.067+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:57:38.077+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:57:38.076+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:57:41.176+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:57:41.199+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 3.166 seconds
+[2023-03-06T18:58:11.912+0000] {processor.py:153} INFO - Started process (PID=1114) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:58:11.916+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:58:11.920+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:58:11.920+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:58:12.887+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:58:12.898+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.995 seconds
+[2023-03-06T18:58:43.532+0000] {processor.py:153} INFO - Started process (PID=1194) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:58:43.535+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:58:43.537+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:58:43.537+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:58:44.478+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:58:44.490+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.964 seconds
+[2023-03-06T18:59:14.615+0000] {processor.py:153} INFO - Started process (PID=1269) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:59:14.618+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:59:14.621+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:59:14.621+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:59:15.647+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:59:15.658+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.048 seconds
+[2023-03-06T18:59:45.747+0000] {processor.py:153} INFO - Started process (PID=1339) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:59:45.751+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T18:59:45.754+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:59:45.753+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:59:47.050+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T18:59:47.081+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.341 seconds
+[2023-03-06T19:00:18.979+0000] {processor.py:153} INFO - Started process (PID=1409) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:00:18.987+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:00:19.002+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:00:19.001+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:00:21.634+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:00:21.657+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.697 seconds
+[2023-03-06T19:00:51.983+0000] {processor.py:153} INFO - Started process (PID=1489) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:00:51.988+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:00:51.993+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:00:51.993+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:00:54.328+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:00:54.361+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.387 seconds
+[2023-03-06T19:01:24.824+0000] {processor.py:153} INFO - Started process (PID=1556) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:01:24.827+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:01:24.829+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:01:24.829+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:01:25.752+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:01:25.762+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.942 seconds
+[2023-03-06T19:01:56.677+0000] {processor.py:153} INFO - Started process (PID=1623) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:01:56.681+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:01:56.684+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:01:56.683+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:01:57.557+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:01:57.567+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.896 seconds
+[2023-03-06T19:02:27.881+0000] {processor.py:153} INFO - Started process (PID=1690) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:02:27.884+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:02:27.886+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:02:27.886+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:02:28.746+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:02:28.756+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.881 seconds
+[2023-03-06T19:02:59.563+0000] {processor.py:153} INFO - Started process (PID=1765) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:02:59.580+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:02:59.627+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:02:59.626+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:03:01.192+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:03:01.207+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.730 seconds
+[2023-03-06T19:03:31.340+0000] {processor.py:153} INFO - Started process (PID=1836) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:03:31.342+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:03:31.344+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:03:31.344+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:03:32.129+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:03:32.139+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.806 seconds
+[2023-03-06T19:04:02.686+0000] {processor.py:153} INFO - Started process (PID=1903) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:04:02.688+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:04:02.691+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:04:02.691+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:04:03.569+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:04:03.579+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.903 seconds
+[2023-03-06T19:04:34.649+0000] {processor.py:153} INFO - Started process (PID=1985) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:04:34.653+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:04:34.658+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:04:34.658+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:04:38.669+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:04:38.689+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 4.072 seconds
+[2023-03-06T19:05:08.963+0000] {processor.py:153} INFO - Started process (PID=2045) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:05:08.967+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:05:08.970+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:05:08.970+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:05:10.420+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:05:10.435+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.480 seconds
+[2023-03-06T19:05:40.806+0000] {processor.py:153} INFO - Started process (PID=2128) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:05:40.809+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:05:40.811+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:05:40.811+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:05:42.034+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:05:42.045+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.246 seconds
+[2023-03-06T19:06:12.131+0000] {processor.py:153} INFO - Started process (PID=2195) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:06:12.135+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:06:12.137+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:06:12.137+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:06:13.067+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:06:13.079+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.954 seconds
+[2023-03-06T19:06:49.850+0000] {processor.py:153} INFO - Started process (PID=2248) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:06:49.863+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:06:49.914+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:06:49.913+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:07:17.630+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:07:17.743+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 27.978 seconds
+[2023-03-06T19:08:00.549+0000] {processor.py:153} INFO - Started process (PID=2309) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:08:00.559+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:08:00.573+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:08:00.572+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:08:02.952+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:08:02.994+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.471 seconds
+[2023-03-06T19:08:33.447+0000] {processor.py:153} INFO - Started process (PID=2367) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:08:33.451+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:08:33.459+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:08:33.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:08:34.612+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:08:34.626+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.187 seconds
+[2023-03-06T19:09:04.777+0000] {processor.py:153} INFO - Started process (PID=2434) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:09:04.795+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:09:04.806+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:09:04.806+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:09:08.527+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:09:08.586+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 3.826 seconds
+[2023-03-06T19:09:39.486+0000] {processor.py:153} INFO - Started process (PID=2502) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:09:39.489+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:09:39.493+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:09:39.493+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:09:40.942+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:09:40.956+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.478 seconds
+[2023-03-06T19:10:11.948+0000] {processor.py:153} INFO - Started process (PID=2571) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:10:11.955+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:10:11.960+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:10:11.960+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:10:15.630+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:10:15.688+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 3.752 seconds
+[2023-03-06T19:10:46.238+0000] {processor.py:153} INFO - Started process (PID=2637) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:10:46.243+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:10:46.246+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:10:46.246+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:10:47.553+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:10:47.568+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.337 seconds
+[2023-03-06T19:11:18.211+0000] {processor.py:153} INFO - Started process (PID=2704) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:11:18.215+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:11:18.219+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:11:18.218+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:11:19.960+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:11:19.982+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.788 seconds
+[2023-03-06T19:11:50.943+0000] {processor.py:153} INFO - Started process (PID=2774) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:11:50.961+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-06T19:11:50.968+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:11:50.967+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:11:55.897+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-06T19:11:55.924+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 5.038 seconds

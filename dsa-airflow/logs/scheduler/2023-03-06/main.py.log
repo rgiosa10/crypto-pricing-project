@@ -1,0 +1,1303 @@
+[2023-03-06T17:08:13.173+0000] {processor.py:153} INFO - Started process (PID=46) to work on /opt/airflow/dags/main.py
+[2023-03-06T17:08:13.179+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T17:08:13.183+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:13.183+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T17:08:20.095+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:20.095+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:08:23.104+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:23.104+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2023-03-06T17:08:23.110+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:23.110+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:08:23.111+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:23.111+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:08:23.124+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:23.113+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:08:23.126+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T17:08:23.210+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 10.051 seconds
+[2023-03-06T17:08:54.350+0000] {processor.py:153} INFO - Started process (PID=114) to work on /opt/airflow/dags/main.py
+[2023-03-06T17:08:54.387+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T17:08:54.448+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:54.440+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T17:08:56.846+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:56.846+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:08:56.859+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:56.858+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:08:56.867+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:56.866+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:08:56.869+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:56.869+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:08:56.880+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:08:56.871+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:08:56.883+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T17:08:56.904+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.617 seconds
+[2023-03-06T17:09:27.324+0000] {processor.py:153} INFO - Started process (PID=190) to work on /opt/airflow/dags/main.py
+[2023-03-06T17:09:27.327+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T17:09:27.329+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:27.329+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T17:09:31.189+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:31.189+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:09:31.198+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:31.197+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:09:31.207+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:31.207+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:09:31.208+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:31.208+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:09:31.218+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:09:31.212+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:09:31.220+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T17:09:31.237+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 3.918 seconds
+[2023-03-06T17:10:02.031+0000] {processor.py:153} INFO - Started process (PID=265) to work on /opt/airflow/dags/main.py
+[2023-03-06T17:10:02.040+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T17:10:02.045+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:02.045+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T17:10:06.862+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:06.861+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:10:06.881+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:06.880+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:10:06.896+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:06.896+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:10:06.900+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:06.899+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:10:06.918+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:06.905+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:10:06.928+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T17:10:06.962+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 4.943 seconds
+[2023-03-06T17:10:37.363+0000] {processor.py:153} INFO - Started process (PID=329) to work on /opt/airflow/dags/main.py
+[2023-03-06T17:10:37.367+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T17:10:37.369+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:37.369+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T17:10:42.791+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:42.790+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:10:42.797+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:42.797+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:10:42.807+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:42.807+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:10:42.809+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:42.809+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:10:42.821+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:10:42.811+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:10:42.825+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T17:10:42.844+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 5.489 seconds
+[2023-03-06T17:11:13.051+0000] {processor.py:153} INFO - Started process (PID=397) to work on /opt/airflow/dags/main.py
+[2023-03-06T17:11:13.056+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T17:11:13.062+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:13.061+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T17:11:18.324+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:18.323+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:11:18.336+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:18.336+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:11:18.348+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:18.347+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:11:18.350+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:18.350+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:11:18.367+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:18.353+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:11:18.373+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T17:11:18.413+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 5.374 seconds
+[2023-03-06T17:11:49.418+0000] {processor.py:153} INFO - Started process (PID=464) to work on /opt/airflow/dags/main.py
+[2023-03-06T17:11:49.420+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T17:11:49.423+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:49.422+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T17:11:53.935+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:53.934+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:11:53.940+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:53.940+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:11:53.945+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:53.945+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:11:53.948+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:53.947+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:11:53.961+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:11:53.950+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:11:53.966+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T17:11:53.985+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 4.576 seconds
+[2023-03-06T17:12:24.768+0000] {processor.py:153} INFO - Started process (PID=543) to work on /opt/airflow/dags/main.py
+[2023-03-06T17:12:24.772+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T17:12:24.775+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:24.775+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T17:12:28.764+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:28.763+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:12:31.769+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:31.768+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: timed out
+[2023-03-06T17:12:31.774+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:31.774+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:12:31.782+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:31.781+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:12:31.805+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:12:31.785+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:12:31.811+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T17:12:31.838+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 7.076 seconds
+[2023-03-06T17:13:02.466+0000] {processor.py:153} INFO - Started process (PID=636) to work on /opt/airflow/dags/main.py
+[2023-03-06T17:13:02.471+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T17:13:02.473+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:02.473+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T17:13:03.591+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:03.591+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:13:03.596+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:03.596+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:13:03.601+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:03.601+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:13:03.603+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:03.603+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:13:03.614+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:03.605+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:13:03.616+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T17:13:03.634+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.174 seconds
+[2023-03-06T17:13:34.038+0000] {processor.py:153} INFO - Started process (PID=701) to work on /opt/airflow/dags/main.py
+[2023-03-06T17:13:34.041+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T17:13:34.044+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:34.043+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T17:13:38.187+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:38.186+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 1 of 3. Reason: timed out
+[2023-03-06T17:13:38.191+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:38.190+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 2 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:13:38.195+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:38.195+0000] {_metadata.py:104} WARNING - Compute Engine Metadata server unavailable on attempt 3 of 3. Reason: [Errno 111] Connection refused
+[2023-03-06T17:13:38.197+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:38.197+0000] {_default.py:302} WARNING - Authentication failed using Compute Engine authentication due to unavailable metadata server.
+[2023-03-06T17:13:38.206+0000] {logging_mixin.py:137} INFO - [2023-03-06T17:13:38.198+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+  File "/opt/airflow/dags/bigquery_load.py", line 44, in <module>
+    client = bigquery.Client()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 235, in __init__
+    _http=_http,
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 320, in __init__
+    _ClientProjectMixin.__init__(self, project=project, credentials=credentials)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 268, in __init__
+    project = self._determine_default(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/client/__init__.py", line 287, in _determine_default
+    return _determine_default_project(project)
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/_helpers/__init__.py", line 152, in _determine_default_project
+    _, project = google.auth.default()
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/auth/_default.py", line 653, in default
+    raise exceptions.DefaultCredentialsError(_HELP_MESSAGE)
+google.auth.exceptions.DefaultCredentialsError: Could not automatically determine credentials. Please set GOOGLE_APPLICATION_CREDENTIALS or explicitly create credentials and re-run the application. For more information, please see https://cloud.google.com/docs/authentication/getting-started
+[2023-03-06T17:13:38.209+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T17:13:38.224+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 4.193 seconds
+[2023-03-06T18:50:09.932+0000] {processor.py:153} INFO - Started process (PID=46) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:50:09.943+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:50:09.948+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:50:09.948+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:50:14.420+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:50:14.412+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+ImportError: cannot import name 'create_data_outputs' from 'bigquery_load' (/opt/airflow/dags/bigquery_load.py)
+[2023-03-06T18:50:14.422+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:50:14.456+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 4.542 seconds
+[2023-03-06T18:50:44.648+0000] {processor.py:153} INFO - Started process (PID=114) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:50:44.650+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:50:44.653+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:50:44.652+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:50:45.827+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:50:45.822+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+ImportError: cannot import name 'create_data_outputs' from 'bigquery_load' (/opt/airflow/dags/bigquery_load.py)
+[2023-03-06T18:50:45.830+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:50:45.847+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.205 seconds
+[2023-03-06T18:51:16.128+0000] {processor.py:153} INFO - Started process (PID=184) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:51:16.132+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:51:16.135+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:51:16.135+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:51:18.100+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:51:18.094+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 18, in <module>
+    from bigquery_load import create_data_outputs, create_dataset, create_table
+ImportError: cannot import name 'create_data_outputs' from 'bigquery_load' (/opt/airflow/dags/bigquery_load.py)
+[2023-03-06T18:51:18.103+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:51:18.125+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.014 seconds
+[2023-03-06T18:51:40.349+0000] {processor.py:153} INFO - Started process (PID=244) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:51:40.353+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:51:40.356+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:51:40.356+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:51:41.710+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:51:41.728+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:51:41.719+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 69, in <module>
+    mode = 'reschedule'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 377, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'delta'
+[2023-03-06T18:51:41.733+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:51:41.758+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.417 seconds
+[2023-03-06T18:52:12.309+0000] {processor.py:153} INFO - Started process (PID=310) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:52:12.311+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:52:12.314+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:52:12.313+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:52:13.461+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:52:13.469+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:52:13.465+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 69, in <module>
+    mode = 'reschedule'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 377, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'delta'
+[2023-03-06T18:52:13.471+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:52:13.489+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.190 seconds
+[2023-03-06T18:52:43.661+0000] {processor.py:153} INFO - Started process (PID=378) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:52:43.665+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:52:43.669+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:52:43.669+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:52:44.920+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:52:44.930+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:52:44.925+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 69, in <module>
+    mode = 'reschedule'
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 377, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'delta'
+[2023-03-06T18:52:44.932+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:52:44.952+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.297 seconds
+[2023-03-06T18:53:11.141+0000] {processor.py:153} INFO - Started process (PID=445) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:53:11.144+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:53:11.147+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:53:11.147+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:53:12.531+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:53:12.556+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:53:12.537+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 69, in <module>
+    mode = 'reschedule',
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 377, in apply_defaults
+    raise AirflowException(f"missing keyword argument {missing_args.pop()!r}")
+airflow.exceptions.AirflowException: missing keyword argument 'delta'
+[2023-03-06T18:53:12.574+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:53:12.605+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.470 seconds
+[2023-03-06T18:53:17.854+0000] {processor.py:153} INFO - Started process (PID=455) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:53:17.861+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:53:17.867+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:53:17.867+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:53:17.905+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:53:17.900+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 71
+    )
+    ^
+SyntaxError: invalid syntax
+[2023-03-06T18:53:17.909+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:53:17.971+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 0.129 seconds
+[2023-03-06T18:53:24.447+0000] {processor.py:153} INFO - Started process (PID=475) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:53:24.454+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:53:24.459+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:53:24.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:53:26.953+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:53:26.964+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:53:26.959+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=sleep_minutes)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 23, 26, 959229)}
+[2023-03-06T18:53:26.967+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:53:26.990+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.558 seconds
+[2023-03-06T18:53:57.184+0000] {processor.py:153} INFO - Started process (PID=545) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:53:57.188+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:53:57.190+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:53:57.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:53:58.431+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:53:58.439+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:53:58.435+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=sleep_minutes)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 23, 58, 435302)}
+[2023-03-06T18:53:58.441+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:53:58.459+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.283 seconds
+[2023-03-06T18:54:29.166+0000] {processor.py:153} INFO - Started process (PID=613) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:54:29.180+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:54:29.190+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:54:29.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:54:30.375+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:54:30.382+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:54:30.379+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=sleep_minutes)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 24, 30, 379033)}
+[2023-03-06T18:54:30.385+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:54:30.401+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.247 seconds
+[2023-03-06T18:55:00.617+0000] {processor.py:153} INFO - Started process (PID=694) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:55:00.621+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:55:00.623+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:55:00.623+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:55:02.098+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:55:02.109+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:55:02.103+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=sleep_minutes)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 25, 2, 103142)}
+[2023-03-06T18:55:02.112+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:55:02.134+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.524 seconds
+[2023-03-06T18:55:10.610+0000] {processor.py:153} INFO - Started process (PID=714) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:55:10.614+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:55:10.618+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:55:10.617+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:55:12.231+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:55:12.277+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:55:12.242+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 25, 12, 241646)}
+[2023-03-06T18:55:12.287+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:55:12.331+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.727 seconds
+[2023-03-06T18:55:42.458+0000] {processor.py:153} INFO - Started process (PID=790) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:55:42.462+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:55:42.466+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:55:42.466+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:55:43.844+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:55:43.854+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:55:43.848+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 25, 43, 848236)}
+[2023-03-06T18:55:43.857+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:55:43.877+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.426 seconds
+[2023-03-06T18:56:14.040+0000] {processor.py:153} INFO - Started process (PID=860) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:56:14.044+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:56:14.047+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:56:14.047+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:56:15.453+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:56:15.465+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:56:15.460+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 26, 15, 459002)}
+[2023-03-06T18:56:15.469+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:56:15.490+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.457 seconds
+[2023-03-06T18:56:46.518+0000] {processor.py:153} INFO - Started process (PID=927) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:56:46.520+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:56:46.522+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:56:46.522+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:56:47.967+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:56:47.975+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:56:47.972+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 26, 47, 971827)}
+[2023-03-06T18:56:47.978+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:56:47.994+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.482 seconds
+[2023-03-06T18:57:18.916+0000] {processor.py:153} INFO - Started process (PID=1006) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:57:18.919+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:57:18.921+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:57:18.921+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:57:20.053+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:57:20.064+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:57:20.058+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 27, 20, 57881)}
+[2023-03-06T18:57:20.066+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:57:20.083+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.173 seconds
+[2023-03-06T18:57:50.711+0000] {processor.py:153} INFO - Started process (PID=1070) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:57:50.715+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:57:50.718+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:57:50.717+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:57:51.827+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:57:51.836+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:57:51.831+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 27, 51, 831236)}
+[2023-03-06T18:57:51.838+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:57:51.852+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.146 seconds
+[2023-03-06T18:58:22.822+0000] {processor.py:153} INFO - Started process (PID=1140) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:58:22.826+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:58:22.828+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:58:22.828+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:58:23.960+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:58:23.968+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:58:23.964+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 28, 23, 964160)}
+[2023-03-06T18:58:23.977+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:58:23.993+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.180 seconds
+[2023-03-06T18:58:54.920+0000] {processor.py:153} INFO - Started process (PID=1207) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:58:54.927+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:58:54.929+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:58:54.929+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:58:56.600+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:58:56.621+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:58:56.612+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 28, 56, 612238)}
+[2023-03-06T18:58:56.624+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:58:56.646+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.733 seconds
+[2023-03-06T18:58:57.541+0000] {processor.py:153} INFO - Started process (PID=1227) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:58:57.545+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:58:57.549+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:58:57.549+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:58:59.182+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:58:59.191+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:58:59.186+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 68, in <module>
+    target_time=(datetime.datetime.utcnow()+timedelta(minutes=390)).time(),
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+[2023-03-06T18:58:59.196+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:58:59.217+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.685 seconds
+[2023-03-06T18:59:02.113+0000] {processor.py:153} INFO - Started process (PID=1239) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:59:02.119+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:59:02.124+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:59:02.124+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:59:03.953+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:59:03.966+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:59:03.958+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 29, 3, 958215)}
+[2023-03-06T18:59:03.969+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:59:03.990+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.890 seconds
+[2023-03-06T18:59:19.984+0000] {processor.py:153} INFO - Started process (PID=1278) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:59:19.987+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:59:19.991+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:59:19.991+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:59:21.246+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:59:21.253+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:59:21.250+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 68, in <module>
+    target_time=(datetime.datetime.utcnow()+timedelta(minutes=390)).time(),
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+[2023-03-06T18:59:21.256+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:59:21.273+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.295 seconds
+[2023-03-06T18:59:51.403+0000] {processor.py:153} INFO - Started process (PID=1353) to work on /opt/airflow/dags/main.py
+[2023-03-06T18:59:51.411+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T18:59:51.415+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:59:51.415+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T18:59:55.046+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T18:59:55.056+0000] {logging_mixin.py:137} INFO - [2023-03-06T18:59:55.050+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 68, in <module>
+    target_time=(datetime.datetime.utcnow()+timedelta(minutes=390)).time(),
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+[2023-03-06T18:59:55.058+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T18:59:55.080+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 3.690 seconds
+[2023-03-06T19:00:13.416+0000] {processor.py:153} INFO - Started process (PID=1396) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:00:13.420+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:00:13.426+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:00:13.425+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:00:15.357+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:00:15.371+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:00:15.363+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 30, 15, 363070)}
+[2023-03-06T19:00:15.375+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:00:15.395+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.988 seconds
+[2023-03-06T19:00:45.569+0000] {processor.py:153} INFO - Started process (PID=1463) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:00:45.574+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:00:45.578+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:00:45.577+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:00:47.207+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:00:47.219+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:00:47.213+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 30, 47, 212988)}
+[2023-03-06T19:00:47.220+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:00:47.241+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.680 seconds
+[2023-03-06T19:01:17.472+0000] {processor.py:153} INFO - Started process (PID=1533) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:01:17.478+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:01:17.480+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:01:17.479+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:01:18.583+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:01:18.593+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:01:18.588+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 31, 18, 588205)}
+[2023-03-06T19:01:18.597+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:01:18.616+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.150 seconds
+[2023-03-06T19:01:48.895+0000] {processor.py:153} INFO - Started process (PID=1612) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:01:48.901+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:01:48.903+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:01:48.903+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:01:50.334+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:01:50.344+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:01:50.339+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 31, 50, 338563)}
+[2023-03-06T19:01:50.346+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:01:50.362+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.479 seconds
+[2023-03-06T19:02:21.225+0000] {processor.py:153} INFO - Started process (PID=1680) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:02:21.231+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:02:21.233+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:02:21.233+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:02:22.647+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:02:22.657+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:02:22.653+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 32, 22, 653217)}
+[2023-03-06T19:02:22.660+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:02:22.676+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.464 seconds
+[2023-03-06T19:02:53.009+0000] {processor.py:153} INFO - Started process (PID=1750) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:02:53.014+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:02:53.017+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:02:53.017+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:02:54.294+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:02:54.304+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:02:54.299+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 32, 54, 298726)}
+[2023-03-06T19:02:54.310+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:02:54.326+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.326 seconds
+[2023-03-06T19:03:25.116+0000] {processor.py:153} INFO - Started process (PID=1821) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:03:25.120+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:03:25.122+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:03:25.122+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:03:26.217+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:03:26.226+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:03:26.221+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 33, 26, 221392)}
+[2023-03-06T19:03:26.229+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:03:26.244+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.134 seconds
+[2023-03-06T19:03:56.477+0000] {processor.py:153} INFO - Started process (PID=1900) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:03:56.480+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:03:56.483+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:03:56.483+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:03:57.558+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:03:57.566+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:03:57.562+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 33, 57, 562184)}
+[2023-03-06T19:03:57.568+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:03:57.581+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.111 seconds
+[2023-03-06T19:04:28.200+0000] {processor.py:153} INFO - Started process (PID=1967) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:04:28.203+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:04:28.206+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:04:28.205+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:04:29.477+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:04:29.488+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:04:29.481+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/time_delta.py", line 40, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/sensors/base.py", line 123, in __init__
+    super().__init__(**kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 394, in apply_defaults
+    result = func(self, **kwargs, default_args=default_args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/baseoperator.py", line 743, in __init__
+    f"Invalid arguments were passed to {self.__class__.__name__} (task_id: {task_id}). "
+airflow.exceptions.AirflowException: Invalid arguments were passed to TimeDeltaSensor (task_id: sleep_until_2nd_scrape). Invalid arguments were:
+**kwargs: {'target_time': datetime.time(1, 34, 29, 481186)}
+[2023-03-06T19:04:29.490+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:04:29.513+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.320 seconds
+[2023-03-06T19:04:54.209+0000] {processor.py:153} INFO - Started process (PID=2025) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:04:54.216+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:04:54.224+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:04:54.224+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:04:57.032+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:04:57.054+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:04:57.046+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:04:57.056+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:04:57.118+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.919 seconds
+[2023-03-06T19:05:27.346+0000] {processor.py:153} INFO - Started process (PID=2103) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:05:27.349+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:05:27.351+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:05:27.351+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:05:28.801+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:05:28.808+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:05:28.805+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:05:28.809+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:05:28.827+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.486 seconds
+[2023-03-06T19:05:59.204+0000] {processor.py:153} INFO - Started process (PID=2171) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:05:59.210+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:05:59.214+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:05:59.213+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:06:00.679+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:06:00.689+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:06:00.684+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:06:00.691+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:06:00.709+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.514 seconds
+[2023-03-06T19:06:35.629+0000] {processor.py:153} INFO - Started process (PID=2235) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:06:35.640+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:06:35.657+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:06:35.656+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:07:03.885+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:07:03.972+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:07:03.936+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:07:03.982+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:07:04.086+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 28.516 seconds
+[2023-03-06T19:08:00.501+0000] {processor.py:153} INFO - Started process (PID=2308) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:08:00.507+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:08:00.534+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:08:00.518+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:08:03.751+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:08:03.764+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:08:03.758+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:08:03.766+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:08:03.796+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 3.337 seconds
+[2023-03-06T19:08:34.478+0000] {processor.py:153} INFO - Started process (PID=2369) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:08:34.484+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:08:34.488+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:08:34.488+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:08:36.176+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:08:36.184+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:08:36.180+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:08:36.186+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:08:36.213+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.742 seconds
+[2023-03-06T19:09:06.995+0000] {processor.py:153} INFO - Started process (PID=2446) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:09:07.001+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:09:07.006+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:09:07.005+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:09:13.578+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:09:13.598+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:09:13.587+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:09:13.606+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:09:13.685+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 6.704 seconds
+[2023-03-06T19:09:44.537+0000] {processor.py:153} INFO - Started process (PID=2519) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:09:44.542+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:09:44.547+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:09:44.547+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:09:49.117+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:09:49.160+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:09:49.131+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:09:49.169+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:09:49.360+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 4.839 seconds
+[2023-03-06T19:10:04.827+0000] {processor.py:153} INFO - Started process (PID=2567) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:10:04.837+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:10:04.853+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:10:04.852+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:10:08.756+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:10:08.781+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:10:08.768+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:10:08.789+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:10:08.827+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 4.011 seconds
+[2023-03-06T19:10:14.098+0000] {processor.py:153} INFO - Started process (PID=2580) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:10:14.122+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:10:14.128+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:10:14.127+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:10:17.842+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:10:17.855+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:10:17.850+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:10:17.857+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:10:17.891+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 3.851 seconds
+[2023-03-06T19:10:48.000+0000] {processor.py:153} INFO - Started process (PID=2641) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:10:48.006+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:10:48.010+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:10:48.010+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:10:50.130+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:10:50.144+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:10:50.138+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:10:50.148+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:10:50.197+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.213 seconds
+[2023-03-06T19:11:20.645+0000] {processor.py:153} INFO - Started process (PID=2713) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:11:20.652+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:11:20.664+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:11:20.663+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:11:22.583+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:11:22.598+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:11:22.591+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:11:22.605+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:11:22.627+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.993 seconds
+[2023-03-06T19:11:55.408+0000] {processor.py:153} INFO - Started process (PID=2786) to work on /opt/airflow/dags/main.py
+[2023-03-06T19:11:55.417+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-06T19:11:55.425+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:11:55.425+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-06T19:11:58.705+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-06T19:11:58.727+0000] {logging_mixin.py:137} INFO - [2023-03-06T19:11:58.716+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 70, in <module>
+    delta = timedelta(minutes=390).time()
+AttributeError: 'datetime.timedelta' object has no attribute 'time'
+[2023-03-06T19:11:58.730+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-06T19:11:58.767+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 3.374 seconds

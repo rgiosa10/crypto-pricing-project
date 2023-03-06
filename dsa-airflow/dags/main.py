@@ -11,21 +11,22 @@ from airflow.utils import timezone
 from airflow.providers.google.cloud.sensors.bigquery import BigQueryTableExistenceSensor, BigQueryTablePartitionExistenceSensor
 import time
 import yaml
+from dateutil.tz import tzlocal
 
 # local imports
 from webscrape import scrape_yahoo, open_raw_yahoo_transform, close_raw_yahoo_transform, stg_file_setup
 from history import hist_transf
-from bigquery_load import create_data_outputs, create_dataset, create_table
+from bigquery_load import create_dataset, create_table
 
 sleep_minutes = 390
 
-# DAG definition
+# first DAG definition
 # -----------------------------------------
 
 with DAG(
-    dag_id='bitcoin_prediction',
-    schedule_interval='30 14 * * *',
-    start_date=datetime(2022, 3, 6, 13, 0),
+    dag_id='bitcoin_first_webscrape',
+    schedule_interval='30 6 * * *',
+    start_date=datetime(2022, 3, 6, 0, 0, 0, 0, tz=tzlocal),
     catchup=False,
     default_view='graph',
     is_paused_upon_creation=True,
@@ -63,11 +64,28 @@ with DAG(
         doc_md = open_raw_yahoo_transform.__doc__        
     )
 
-    sleep_task = TimeDeltaSensor(
-        task_id='sleep_until_2nd_scrape',
-        target_time=(datetime.utcnow()+timedelta(minutes=sleep_minutes)).time(),
-        mode = 'reschedule'
-    )
+with DAG(
+    dag_id='bitcoin_second_webscrape',
+    schedule_interval='00 13 * * *',
+    start_date=datetime(2022, 3, 6, 0, 0, 0, 0, tz=tzlocal),
+    catchup=False,
+    default_view='graph',
+    is_paused_upon_creation=True,
+    tags=['dsa', 'data-loaders'],
+    default_args={
+        'depends_on_past': False,
+        'email': ['airflow@example.com'],
+        'email_on_failure': False,
+        'email_on_retry': False,
+        'retries': 0,
+    }
+) as dag:
+    # dag's doc in markdown
+    # setting it to this module's docstring defined at the very top of this file
+    dag.doc_md = __doc__
+
+    print(__file__)
+    # pre-check task
 
     webscrape_task_2 = PythonOperator(
         task_id='scrape_close_bitcoin_price',
@@ -109,6 +127,6 @@ with DAG(
     )
 
 #task flow
-history_data_task >> webscrape_task_1 >> transform_open_pricing_task >> sleep_task >> webscrape_task_2 >> transform_close_pricing >> stg_file_creation >> create_dataset_task >> create_table_task 
+history_data_task >> webscrape_task_1 >> transform_open_pricing_task >> webscrape_task_2 >> transform_close_pricing >> stg_file_creation >> create_dataset_task >> create_table_task 
 
     
