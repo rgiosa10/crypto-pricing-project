@@ -15,6 +15,7 @@ import yaml
 # local imports
 from webscrape import scrape_yahoo, open_raw_yahoo_transform, close_raw_yahoo_transform, stg_file_setup
 from history import hist_transf
+from bigquery_load import create_data_outputs, create_dataset, create_table
 
 sleep_minutes = 390
 
@@ -86,11 +87,28 @@ with DAG(
         doc_md = stg_file_setup.__doc__
     )
 
+    #create_outputs_data_dir_task
+    #create_outputs_data_dir_task = PythonOperator(
+        #task_id='create_outputs_data_dir_task',
+        #python_callable = create_data_outputs,
+        #doc_md = create_data_outputs.__doc__        
+    #)
+
     #create_bq_dataset_task
+    create_dataset_task = PythonOperator(
+        task_id='create_dataset',
+        python_callable = create_dataset,
+        doc_md = create_dataset.__doc__        
+    )
 
     #load_table_bq_task
+    create_table_task = PythonOperator(
+        task_id='create_table',
+        python_callable = create_table,
+        doc_md = create_table.__doc__        
+    )
 
 #task flow
-history_data_task >> webscrape_task_1 >> transform_open_pricing_task >> sleep_task >> webscrape_task_2 >> transform_close_pricing >> stg_file_creation
+history_data_task >> webscrape_task_1 >> transform_open_pricing_task >> sleep_task >> webscrape_task_2 >> transform_close_pricing >> stg_file_creation >> create_dataset_task >> create_table_task 
 
     

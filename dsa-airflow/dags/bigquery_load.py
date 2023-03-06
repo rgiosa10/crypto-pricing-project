@@ -28,11 +28,11 @@ data_dir = '../data/'
 #------------------------------------------------
 
 #creates directory within the data directory for transformed parquet files
-def create_data_outputs():
-    try:
-        os.mkdir(os.path.join(data_dir,'outputs'))
-    except:
-        pass
+#def create_data_outputs():
+    #try:
+        #os.mkdir(os.path.join(data_dir,'outputs'))
+    #except:
+        #pass
 
 #------------------------------------------------
 #Create project info and table schemas for load into BigQuery
