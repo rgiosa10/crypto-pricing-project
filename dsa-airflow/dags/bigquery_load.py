@@ -73,7 +73,7 @@ def create_dataset():
 #------------------------------------------------
 def create_table():
     job_config = bigquery.LoadJobConfig(
-            source_format=bigquery.SourceFormat.CVS,
+            source_format=bigquery.SourceFormat.CSV,
             autodetect=True,
             create_disposition='CREATE_NEVER',
             write_disposition='WRITE_TRUNCATE',
@@ -86,3 +86,6 @@ def create_table():
         job = client.load_table_from_file(source_file, table_id, job_config=job_config)
 
     job.result()
+    
+    #delete file
+    os.remove(os.path.join(data_dir, config['bitcoin_consolidated']))
