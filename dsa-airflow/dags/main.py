@@ -17,6 +17,7 @@ from dateutil.tz import tzlocal
 from webscrape import scrape_yahoo, open_raw_yahoo_transform, close_raw_yahoo_transform, stg_file_setup
 from history import hist_transf
 from bigquery_load import create_dataset, create_table
+from openai import chat_gpt_prediction
 
 sleep_minutes = 390
 
@@ -126,9 +127,15 @@ with DAG(
         doc_md = create_table.__doc__        
     )
 
+    chatgpt_prediction_task = PythonOperator(
+        task_id='chatgpt_prediction',
+        python_callable = chat_gpt_prediction,
+        doc_md = chat_gpt_prediction.__doc__        
+    )
+
 #task flow
 history_data_task >> webscrape_task_1 >> transform_open_pricing_task
 
-webscrape_task_2 >> transform_close_pricing >> stg_file_creation >> create_dataset_task >> create_table_task 
+webscrape_task_2 >> transform_close_pricing >> stg_file_creation >> create_dataset_task >> create_table_task >> chatgpt_prediction_task
 
     
