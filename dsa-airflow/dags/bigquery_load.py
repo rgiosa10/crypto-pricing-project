@@ -88,4 +88,4 @@ def create_table():
     job.result()
     
     #delete file
-    os.remove(os.path.join(data_dir, config['bitcoin_consolidated']))
+    #os.remove(os.path.join(data_dir, config['bitcoin_consolidated']))

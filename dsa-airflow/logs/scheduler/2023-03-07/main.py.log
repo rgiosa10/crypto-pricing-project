@@ -1,0 +1,585 @@
+[2023-03-07T00:00:22.730+0000] {processor.py:153} INFO - Started process (PID=1777) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:00:22.735+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:00:22.740+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:00:22.739+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:00:24.718+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:00:24.723+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:00:24.737+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:00:24.773+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:00:24.772+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:00:24.825+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:00:24.824+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:00:24.838+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:00:24.837+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:00:24.874+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.161 seconds
+[2023-03-07T00:00:55.038+0000] {processor.py:153} INFO - Started process (PID=1853) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:00:55.042+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:00:55.047+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:00:55.047+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:00:56.740+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:00:56.744+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:00:56.756+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:00:56.789+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:00:56.788+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:00:56.845+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:00:56.844+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:00:56.862+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:00:56.861+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:00:56.909+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.883 seconds
+[2023-03-07T00:01:27.664+0000] {processor.py:153} INFO - Started process (PID=1923) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:01:27.667+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:01:27.670+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:01:27.670+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:01:29.210+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:01:29.217+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:01:29.233+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:01:29.276+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:01:29.275+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:01:29.338+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:01:29.338+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:01:29.350+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:01:29.349+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:01:29.392+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.738 seconds
+[2023-03-07T00:01:59.493+0000] {processor.py:153} INFO - Started process (PID=1995) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:01:59.498+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:01:59.504+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:01:59.504+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:02:01.663+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:02:01.673+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:02:01.702+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:02:01.749+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:02:01.748+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:02:01.842+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:02:01.842+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:02:01.856+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:02:01.856+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:02:01.899+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.424 seconds
+[2023-03-07T00:02:32.463+0000] {processor.py:153} INFO - Started process (PID=2069) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:02:32.478+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:02:32.487+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:02:32.487+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:02:34.136+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:02:34.142+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:02:34.154+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:02:34.190+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:02:34.189+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:02:34.243+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:02:34.243+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:02:34.256+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:02:34.256+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:02:34.295+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.851 seconds
+[2023-03-07T00:03:05.169+0000] {processor.py:153} INFO - Started process (PID=2139) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:03:05.173+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:03:05.176+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:03:05.176+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:03:06.651+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:03:06.656+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:03:06.667+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:03:06.697+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:03:06.697+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:03:06.756+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:03:06.756+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:03:06.771+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:03:06.771+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:03:06.810+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.651 seconds
+[2023-03-07T00:03:37.564+0000] {processor.py:153} INFO - Started process (PID=2221) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:03:37.567+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:03:37.571+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:03:37.571+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:03:39.250+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:03:39.260+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:03:39.275+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:03:39.318+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:03:39.317+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:03:39.376+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:03:39.376+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:03:39.392+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:03:39.392+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:03:39.437+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.883 seconds
+[2023-03-07T00:04:09.582+0000] {processor.py:153} INFO - Started process (PID=2299) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:04:09.587+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:04:09.591+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:04:09.591+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:04:11.295+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:04:11.302+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:04:11.316+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:04:11.365+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:04:11.364+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:04:11.433+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:04:11.433+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:04:11.443+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:04:11.443+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:04:11.488+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.918 seconds
+[2023-03-07T00:04:41.836+0000] {processor.py:153} INFO - Started process (PID=2373) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:04:41.843+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:04:41.850+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:04:41.850+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:04:44.182+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:04:44.198+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:04:44.220+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:04:44.291+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:04:44.290+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:04:44.386+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:04:44.386+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:04:44.410+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:04:44.409+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:04:44.468+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.647 seconds
+[2023-03-07T00:05:15.167+0000] {processor.py:153} INFO - Started process (PID=2450) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:05:15.173+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:05:15.178+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:05:15.178+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:05:18.149+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:05:18.169+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:05:18.213+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:05:18.289+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:05:18.288+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:05:18.493+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:05:18.493+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:05:18.526+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:05:18.526+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:05:18.645+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 3.488 seconds
+[2023-03-07T00:05:57.921+0000] {processor.py:153} INFO - Started process (PID=2520) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:05:57.935+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:05:57.946+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:05:57.945+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:06:03.876+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:06:03.896+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:06:03.929+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:06:04.000+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:06:03.999+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:06:04.128+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:06:04.128+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:06:04.154+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:06:04.154+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:06:04.221+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 6.354 seconds
+[2023-03-07T00:06:34.452+0000] {processor.py:153} INFO - Started process (PID=2595) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:06:34.462+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:06:34.470+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:06:34.469+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:06:36.898+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:06:36.915+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:06:36.939+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:06:36.993+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:06:36.992+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:06:37.080+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:06:37.079+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:06:37.102+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:06:37.101+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:06:37.158+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.719 seconds
+[2023-03-07T00:07:07.353+0000] {processor.py:153} INFO - Started process (PID=2671) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:07:07.358+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:07:07.364+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:07:07.364+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:07:09.040+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:07:09.044+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:07:09.057+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:07:09.100+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:07:09.099+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:07:09.159+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:07:09.159+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:07:09.171+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:07:09.171+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:07:09.201+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.869 seconds
+[2023-03-07T00:07:39.420+0000] {processor.py:153} INFO - Started process (PID=2745) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:07:39.423+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:07:39.426+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:07:39.425+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:07:40.674+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:07:40.678+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:07:40.694+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:07:40.737+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:07:40.737+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:07:40.782+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:07:40.781+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:07:40.794+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:07:40.794+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:07:40.823+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.413 seconds
+[2023-03-07T00:08:11.068+0000] {processor.py:153} INFO - Started process (PID=2817) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:08:11.073+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:08:11.079+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:08:11.078+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:08:13.355+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:08:13.362+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:08:13.382+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:08:13.422+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:08:13.421+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:08:13.493+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:08:13.492+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:08:13.510+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:08:13.509+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:08:13.563+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.506 seconds
+[2023-03-07T00:08:44.592+0000] {processor.py:153} INFO - Started process (PID=2903) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:08:44.597+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:08:44.603+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:08:44.602+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:08:46.428+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:08:46.432+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:08:46.448+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:08:46.484+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:08:46.483+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:08:46.545+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:08:46.544+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:08:46.558+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:08:46.558+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:08:46.605+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.021 seconds
+[2023-03-07T00:09:16.869+0000] {processor.py:153} INFO - Started process (PID=2978) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:09:16.875+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:09:16.885+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:09:16.884+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:09:21.881+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:09:21.901+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:09:21.941+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:09:22.120+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:09:22.118+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:09:22.256+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:09:22.255+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:09:22.289+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:09:22.288+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:09:22.351+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 5.498 seconds
+[2023-03-07T00:09:53.030+0000] {processor.py:153} INFO - Started process (PID=3053) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:09:53.045+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:09:53.055+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:09:53.053+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:09:56.322+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:09:56.345+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:09:56.364+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:09:56.411+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:09:56.410+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:09:56.475+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:09:56.474+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:09:56.490+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:09:56.490+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:09:56.534+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 3.527 seconds
+[2023-03-07T00:10:27.158+0000] {processor.py:153} INFO - Started process (PID=3126) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:10:27.161+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:10:27.164+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:10:27.164+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:10:28.372+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:10:28.377+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:10:28.388+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:10:28.428+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:10:28.427+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:10:28.491+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:10:28.491+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:10:28.508+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:10:28.508+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:10:28.545+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.395 seconds
+[2023-03-07T00:10:58.748+0000] {processor.py:153} INFO - Started process (PID=3198) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:10:58.753+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:10:58.755+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:10:58.755+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:11:00.499+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:11:00.504+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:11:00.517+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:11:00.566+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:11:00.565+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:11:00.622+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:11:00.622+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:11:00.635+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:11:00.635+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:11:00.674+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.938 seconds
+[2023-03-07T00:11:30.848+0000] {processor.py:153} INFO - Started process (PID=3270) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:11:30.865+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:11:30.873+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:11:30.873+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:11:32.930+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:11:32.936+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:11:32.953+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:11:32.996+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:11:32.996+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:11:33.064+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:11:33.063+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:11:33.079+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:11:33.079+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:11:33.115+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.279 seconds
+[2023-03-07T00:12:03.524+0000] {processor.py:153} INFO - Started process (PID=3342) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:12:03.527+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:12:03.530+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:12:03.530+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:12:05.039+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:12:05.044+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:12:05.057+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:12:05.091+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:12:05.091+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:12:05.144+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:12:05.144+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:12:05.155+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:12:05.155+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:12:05.192+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.676 seconds
+[2023-03-07T00:12:35.356+0000] {processor.py:153} INFO - Started process (PID=3422) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:12:35.361+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:12:35.364+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:12:35.364+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:12:36.832+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:12:36.840+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:12:36.859+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:12:36.902+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:12:36.901+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:12:36.956+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:12:36.956+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:12:36.972+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:12:36.972+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:12:37.010+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.664 seconds
+[2023-03-07T00:13:07.144+0000] {processor.py:153} INFO - Started process (PID=3496) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:13:07.153+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:13:07.158+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:13:07.158+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:13:10.910+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:13:10.970+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:13:11.092+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:13:11.573+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:13:11.571+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:13:11.918+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:13:11.917+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:13:11.976+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:13:11.960+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:13:12.104+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 4.975 seconds
+[2023-03-07T00:13:44.004+0000] {processor.py:153} INFO - Started process (PID=3562) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:13:44.010+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:13:44.017+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:13:44.016+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:13:46.845+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:13:46.859+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:13:46.888+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:13:46.970+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:13:46.969+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:13:47.114+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:13:47.113+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:13:47.132+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:13:47.131+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:13:47.202+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 3.217 seconds
+[2023-03-07T00:14:17.782+0000] {processor.py:153} INFO - Started process (PID=3624) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:14:17.787+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:14:17.791+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:14:17.791+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:14:19.588+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:14:19.593+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:14:19.607+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:14:19.649+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:14:19.648+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:14:19.706+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:14:19.706+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:14:19.719+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:14:19.719+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:14:19.758+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.985 seconds
+[2023-03-07T00:14:51.362+0000] {processor.py:153} INFO - Started process (PID=3696) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:14:51.373+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:14:51.389+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:14:51.389+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:15:23.542+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:15:21.518+0000] {timeout.py:68} ERROR - Process timed out, PID: 3696
+[2023-03-07T00:15:25.879+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:15:24.354+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 11, in <module>
+    from airflow.providers.google.cloud.sensors.bigquery import BigQueryTableExistenceSensor, BigQueryTablePartitionExistenceSensor
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/sensors/bigquery.py", line 25, in <module>
+    from airflow.providers.google.cloud.hooks.bigquery import BigQueryHook
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 38, in <module>
+    from google.cloud.bigquery import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/__init__.py", line 35, in <module>
+    from google.cloud.bigquery.client import Client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 61, in <module>
+    from google.cloud.bigquery_storage_v1.services.big_query_read.client import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/__init__.py", line 25, in <module>
+    from google.cloud.bigquery_storage_v1 import client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/client.py", line 26, in <module>
+    from google.cloud.bigquery_storage_v1 import reader
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/reader.py", line 30, in <module>
+    import pandas
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 48, in <module>
+    from pandas.core.groupby import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/generic.py", line 29, in <module>
+    from pandas._libs import (
+  File "pandas/_libs/reduction.pyx", line 23, in init pandas._libs.reduction
+  File "<frozen importlib._bootstrap>", line 1009, in _handle_fromlist
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/main.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.5.1/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.5.1/best-practices.html#reducing-dag-complexity, PID: 3696
+[2023-03-07T00:15:26.865+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:15:37.956+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 46.670 seconds
+[2023-03-07T00:16:35.173+0000] {processor.py:153} INFO - Started process (PID=3781) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:16:35.180+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:16:35.185+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:16:35.184+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:16:37.753+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:16:37.769+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:16:37.799+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:16:38.014+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:16:38.013+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:16:38.097+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:16:38.096+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:16:38.115+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:16:38.114+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:16:38.203+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 3.047 seconds
+[2023-03-07T00:17:08.604+0000] {processor.py:153} INFO - Started process (PID=3854) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:17:08.610+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:17:08.615+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:17:08.615+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:17:11.106+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:17:11.112+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:17:11.128+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:17:11.173+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:17:11.173+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:17:11.236+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:17:11.236+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:17:11.255+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:17:11.254+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:17:11.320+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.729 seconds
+[2023-03-07T00:17:41.998+0000] {processor.py:153} INFO - Started process (PID=3925) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:17:42.003+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:17:42.008+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:17:42.007+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:17:44.180+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:17:44.186+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:17:44.199+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:17:44.236+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:17:44.236+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:17:44.287+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:17:44.286+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:17:44.302+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:17:44.302+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:17:44.345+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.355 seconds
+[2023-03-07T00:18:14.604+0000] {processor.py:153} INFO - Started process (PID=3996) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:18:14.608+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:18:14.612+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:18:14.612+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:18:16.327+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:18:16.332+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:18:16.345+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:18:16.380+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:18:16.379+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:18:16.430+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:18:16.429+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:18:16.445+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:18:16.444+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:18:16.481+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.888 seconds
+[2023-03-07T00:18:47.029+0000] {processor.py:153} INFO - Started process (PID=4067) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:18:47.033+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:18:47.035+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:18:47.035+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:18:48.381+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:18:48.385+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:18:48.407+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:18:48.483+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:18:48.482+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:18:48.550+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:18:48.549+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:18:48.569+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:18:48.568+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:18:48.634+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.612 seconds
+[2023-03-07T00:19:29.302+0000] {processor.py:153} INFO - Started process (PID=4148) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:19:29.308+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:19:29.313+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:19:29.313+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:19:34.526+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:19:34.541+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:19:34.582+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:19:34.683+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:19:34.681+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:19:34.766+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:19:34.766+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:19:34.809+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:19:34.808+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:19:34.889+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 5.604 seconds
+[2023-03-07T00:20:05.929+0000] {processor.py:153} INFO - Started process (PID=4217) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:20:05.932+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:20:05.938+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:20:05.938+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:20:09.255+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:20:09.276+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:20:09.405+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:20:09.602+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:20:09.597+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:20:09.893+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:20:09.893+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:20:09.958+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:20:09.957+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:20:10.024+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 4.100 seconds
+[2023-03-07T00:20:58.721+0000] {processor.py:153} INFO - Started process (PID=4273) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:20:58.735+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:20:58.745+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:20:58.744+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:21:01.476+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:21:01.483+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:21:01.505+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:21:01.572+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:21:01.570+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:21:01.647+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:21:01.647+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:21:01.667+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:21:01.666+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:21:01.733+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 3.040 seconds
+[2023-03-07T00:21:31.849+0000] {processor.py:153} INFO - Started process (PID=4348) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:21:31.853+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:21:31.857+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:21:31.857+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:21:33.622+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:21:33.633+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:21:33.652+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:21:33.693+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:21:33.692+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:21:33.807+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:21:33.807+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:21:33.833+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:21:33.832+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:21:33.892+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.054 seconds
+[2023-03-07T00:22:05.569+0000] {processor.py:153} INFO - Started process (PID=4418) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:22:05.582+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:22:05.607+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:22:05.607+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:22:24.475+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:22:24.525+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:22:24.758+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:22:25.253+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:22:25.247+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:22:25.940+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:22:25.939+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:22:26.034+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:22:26.034+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:22:26.377+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 20.844 seconds
+[2023-03-07T00:23:30.665+0000] {processor.py:153} INFO - Started process (PID=4506) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:23:30.676+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:23:30.683+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:23:30.683+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:23:37.125+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:23:37.150+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:23:37.185+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:23:37.260+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:23:37.257+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:23:37.391+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:23:37.390+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:23:37.428+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:23:37.428+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:23:37.499+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 6.870 seconds
+[2023-03-07T00:24:08.463+0000] {processor.py:153} INFO - Started process (PID=4582) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:24:08.466+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:24:08.469+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:24:08.468+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:24:10.525+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:24:10.530+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:24:10.546+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:24:10.590+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:24:10.590+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:24:10.646+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:24:10.646+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:24:10.663+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:24:10.663+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:24:10.702+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.250 seconds
+[2023-03-07T00:24:41.601+0000] {processor.py:153} INFO - Started process (PID=4658) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:24:41.605+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:24:41.609+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:24:41.609+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:24:43.024+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:24:43.031+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:24:43.046+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:24:43.085+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:24:43.084+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:24:43.145+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:24:43.145+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:24:43.158+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:24:43.157+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:24:43.191+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.600 seconds
+[2023-03-07T00:25:13.589+0000] {processor.py:153} INFO - Started process (PID=4737) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:25:13.593+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:25:13.616+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:25:13.615+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:25:15.036+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:25:15.041+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:25:15.052+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:25:15.087+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:25:15.086+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:25:15.134+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:25:15.133+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:25:15.148+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:25:15.148+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:25:15.184+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.605 seconds
+[2023-03-07T00:25:45.332+0000] {processor.py:153} INFO - Started process (PID=4811) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:25:45.337+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:25:45.341+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:25:45.341+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:25:46.755+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:25:46.760+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:25:46.774+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:25:46.807+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:25:46.806+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:25:46.862+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:25:46.862+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:25:46.876+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:25:46.876+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:25:46.915+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.590 seconds
+[2023-03-07T00:26:17.095+0000] {processor.py:153} INFO - Started process (PID=4881) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:26:17.098+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:26:17.102+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:26:17.102+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:26:18.521+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:26:18.525+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:26:18.536+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:26:18.574+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:26:18.573+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:26:18.681+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:26:18.681+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:26:18.697+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:26:18.696+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:26:18.739+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.652 seconds
+[2023-03-07T00:26:49.583+0000] {processor.py:153} INFO - Started process (PID=4952) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:26:49.589+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:26:49.593+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:26:49.593+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:26:51.530+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:26:51.537+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:26:51.552+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:26:51.600+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:26:51.599+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:26:51.677+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:26:51.677+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:26:51.699+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:26:51.699+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:26:51.747+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.185 seconds
+[2023-03-07T00:27:22.191+0000] {processor.py:153} INFO - Started process (PID=5026) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:27:22.195+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:27:22.197+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:27:22.197+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:27:23.724+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:27:23.728+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:27:23.739+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:27:23.767+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:27:23.766+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:27:23.810+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:27:23.810+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:27:23.823+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:27:23.823+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:27:23.850+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.666 seconds
+[2023-03-07T00:27:54.811+0000] {processor.py:153} INFO - Started process (PID=5100) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:27:54.814+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:27:54.823+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:27:54.821+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:27:56.413+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:27:56.417+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:27:56.430+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:27:56.470+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:27:56.468+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:27:56.532+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:27:56.532+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:27:56.547+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:27:56.547+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:27:56.579+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.776 seconds
+[2023-03-07T00:28:27.313+0000] {processor.py:153} INFO - Started process (PID=5185) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:28:27.320+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:28:27.327+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:28:27.325+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:28:29.743+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:28:29.756+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:28:29.773+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:28:29.832+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:28:29.831+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:28:29.906+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:28:29.905+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:28:29.928+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:28:29.928+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:28:29.979+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.685 seconds
+[2023-03-07T00:29:00.129+0000] {processor.py:153} INFO - Started process (PID=5250) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:29:00.137+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:29:00.144+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:29:00.144+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:29:05.540+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:29:05.551+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:29:05.605+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:29:05.697+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:29:05.695+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:29:05.793+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:29:05.792+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:29:05.811+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:29:05.811+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:29:06.021+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 5.914 seconds
+[2023-03-07T00:29:36.738+0000] {processor.py:153} INFO - Started process (PID=5327) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:29:36.741+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:29:36.744+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:29:36.743+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:29:38.062+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:29:38.066+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:29:38.076+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_first_webscrape', 'bitcoin_second_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:29:38.103+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:29:38.102+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:29:38.145+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:29:38.145+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:29:38.157+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:29:38.156+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:29:38.190+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 1.460 seconds
+[2023-03-07T00:30:08.570+0000] {processor.py:153} INFO - Started process (PID=5401) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:30:08.576+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:30:08.590+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:30:08.590+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:30:10.678+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:30:10.686+0000] {logging_mixin.py:137} INFO - /opt/airflow/dags/main.py
+[2023-03-07T00:30:10.712+0000] {processor.py:753} INFO - DAG(s) dict_keys(['bitcoin_second_webscrape', 'bitcoin_first_webscrape']) retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:30:10.757+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:30:10.756+0000] {dag.py:2690} INFO - Sync 2 DAGs
+[2023-03-07T00:30:10.814+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:30:10.814+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_first_webscrape to 2023-03-06T06:30:00+00:00, run_after=2023-03-07T06:30:00+00:00
+[2023-03-07T00:30:10.832+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:30:10.832+0000] {dag.py:3441} INFO - Setting next_dagrun for bitcoin_second_webscrape to 2023-03-06T13:00:00+00:00, run_after=2023-03-07T13:00:00+00:00
+[2023-03-07T00:30:10.880+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 2.322 seconds
+[2023-03-07T00:30:51.515+0000] {processor.py:153} INFO - Started process (PID=5473) to work on /opt/airflow/dags/main.py
+[2023-03-07T00:30:51.983+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/main.py for tasks to queue
+[2023-03-07T00:30:52.266+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:30:52.265+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/main.py
+[2023-03-07T00:31:24.451+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:31:23.842+0000] {timeout.py:68} ERROR - Process timed out, PID: 5473
+[2023-03-07T00:31:25.013+0000] {logging_mixin.py:137} INFO - [2023-03-07T00:31:24.486+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/main.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/main.py", line 11, in <module>
+    from airflow.providers.google.cloud.sensors.bigquery import BigQueryTableExistenceSensor, BigQueryTablePartitionExistenceSensor
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/sensors/bigquery.py", line 25, in <module>
+    from airflow.providers.google.cloud.hooks.bigquery import BigQueryHook
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/hooks/bigquery.py", line 38, in <module>
+    from google.cloud.bigquery import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/__init__.py", line 35, in <module>
+    from google.cloud.bigquery.client import Client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery/client.py", line 61, in <module>
+    from google.cloud.bigquery_storage_v1.services.big_query_read.client import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/__init__.py", line 25, in <module>
+    from google.cloud.bigquery_storage_v1 import client
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/client.py", line 27, in <module>
+    from google.cloud.bigquery_storage_v1.services import big_query_read
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/services/big_query_read/__init__.py", line 16, in <module>
+    from .client import BigQueryReadClient
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/services/big_query_read/client.py", line 37, in <module>
+    from google.cloud.bigquery_storage_v1.types import arrow
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/types/__init__.py", line 16, in <module>
+    from .arrow import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/google/cloud/bigquery_storage_v1/types/arrow.py", line 16, in <module>
+    import proto  # type: ignore
+  File "/home/airflow/.local/lib/python3.7/site-packages/proto/__init__.py", line 15, in <module>
+    from .enums import Enum
+  File "/home/airflow/.local/lib/python3.7/site-packages/proto/enums.py", line 19, in <module>
+    from proto import _file_info
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 963, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 906, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1280, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1252, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1394, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 95, in _path_isfile
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/main.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.5.1/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.5.1/best-practices.html#reducing-dag-complexity, PID: 5473
+[2023-03-07T00:31:25.145+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/main.py
+[2023-03-07T00:31:25.968+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/main.py took 37.021 seconds
