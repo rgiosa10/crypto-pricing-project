@@ -7,8 +7,6 @@ import dateutil
 import numpy as np
 
 
-
-
 def chat_gpt_prediction():
     import os
     import openai
