@@ -19,8 +19,6 @@ from history import hist_transf
 from bigquery_load import create_dataset, create_table, gcs_upload
 from openai_predict import chat_gpt_prediction
 
-sleep_minutes = 390
-
 # first DAG definition
 # -----------------------------------------
 

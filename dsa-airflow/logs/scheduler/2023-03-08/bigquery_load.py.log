@@ -1422,3 +1422,568 @@ expected <block end>, but found '<block sequence start>'
 [2023-03-08T20:59:42.644+0000] {logging_mixin.py:137} INFO - [2023-03-08T20:59:42.644+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
 [2023-03-08T20:59:43.912+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
 [2023-03-08T20:59:43.924+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.294 seconds
+[2023-03-08T21:00:14.773+0000] {processor.py:153} INFO - Started process (PID=2504) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:00:14.776+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:00:14.778+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:00:14.777+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:00:15.853+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:00:15.862+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.096 seconds
+[2023-03-08T21:00:46.425+0000] {processor.py:153} INFO - Started process (PID=2577) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:00:46.428+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:00:46.431+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:00:46.430+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:00:47.421+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:00:47.430+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.010 seconds
+[2023-03-08T21:20:43.801+0000] {processor.py:153} INFO - Started process (PID=49) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:20:43.817+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:20:43.821+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:20:43.821+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:20:46.113+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:20:46.162+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.374 seconds
+[2023-03-08T21:21:16.574+0000] {processor.py:153} INFO - Started process (PID=120) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:21:16.576+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:21:16.580+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:21:16.580+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:21:17.666+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:21:17.676+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.110 seconds
+[2023-03-08T21:21:48.736+0000] {processor.py:153} INFO - Started process (PID=194) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:21:48.742+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:21:48.759+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:21:48.759+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:21:50.795+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:21:50.824+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.103 seconds
+[2023-03-08T21:22:21.681+0000] {processor.py:153} INFO - Started process (PID=264) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:22:21.686+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:22:21.689+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:22:21.689+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:22:22.741+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:22:22.755+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.082 seconds
+[2023-03-08T21:22:52.945+0000] {processor.py:153} INFO - Started process (PID=337) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:22:52.949+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:22:52.952+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:22:52.951+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:22:54.158+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:22:54.169+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.231 seconds
+[2023-03-08T21:23:24.342+0000] {processor.py:153} INFO - Started process (PID=411) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:23:24.357+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:23:24.375+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:23:24.366+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:23:27.967+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:23:27.985+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 3.672 seconds
+[2023-03-08T21:23:58.277+0000] {processor.py:153} INFO - Started process (PID=487) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:23:58.282+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:23:58.286+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:23:58.286+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:24:00.410+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:24:00.428+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.159 seconds
+[2023-03-08T21:24:30.630+0000] {processor.py:153} INFO - Started process (PID=559) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:24:30.636+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:24:30.664+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:24:30.663+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:24:32.618+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:24:32.636+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.019 seconds
+[2023-03-08T21:25:03.448+0000] {processor.py:153} INFO - Started process (PID=620) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:25:03.456+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:25:03.462+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:25:03.461+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:25:06.110+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:25:06.133+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.702 seconds
+[2023-03-08T21:25:36.578+0000] {processor.py:153} INFO - Started process (PID=693) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:25:36.584+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:25:36.587+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:25:36.587+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:25:38.844+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:25:38.870+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.304 seconds
+[2023-03-08T21:26:09.308+0000] {processor.py:153} INFO - Started process (PID=766) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:26:09.313+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:26:09.319+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:26:09.318+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:26:11.249+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:26:11.262+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.970 seconds
+[2023-03-08T21:26:42.232+0000] {processor.py:153} INFO - Started process (PID=839) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:26:42.238+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:26:42.243+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:26:42.243+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:26:43.379+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:26:43.394+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.168 seconds
+[2023-03-08T21:27:14.175+0000] {processor.py:153} INFO - Started process (PID=913) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:27:14.182+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:27:14.189+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:27:14.189+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:27:16.160+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:27:16.192+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.029 seconds
+[2023-03-08T21:27:46.507+0000] {processor.py:153} INFO - Started process (PID=995) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:27:46.511+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:27:46.518+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:27:46.518+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:27:48.464+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:27:48.483+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.990 seconds
+[2023-03-08T21:28:18.603+0000] {processor.py:153} INFO - Started process (PID=1064) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:28:18.606+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:28:18.610+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:28:18.610+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:28:20.495+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:28:20.516+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.923 seconds
+[2023-03-08T21:28:50.695+0000] {processor.py:153} INFO - Started process (PID=1138) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:28:50.707+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:28:50.714+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:28:50.713+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:28:52.361+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:28:52.375+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.692 seconds
+[2023-03-08T21:29:22.792+0000] {processor.py:153} INFO - Started process (PID=1212) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:29:22.799+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:29:22.805+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:29:22.804+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:29:25.545+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:29:25.562+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.790 seconds
+[2023-03-08T21:29:55.876+0000] {processor.py:153} INFO - Started process (PID=1288) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:29:55.882+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:29:55.889+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:29:55.888+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:29:58.065+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:29:58.082+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.224 seconds
+[2023-03-08T21:30:28.732+0000] {processor.py:153} INFO - Started process (PID=1363) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:30:28.738+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:30:28.747+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:30:28.747+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:30:30.741+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:30:30.756+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.071 seconds
+[2023-03-08T21:31:01.343+0000] {processor.py:153} INFO - Started process (PID=1437) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:31:01.352+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:31:01.361+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:31:01.360+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:31:03.597+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:31:03.619+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.298 seconds
+[2023-03-08T21:31:34.059+0000] {processor.py:153} INFO - Started process (PID=1513) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:31:34.066+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:31:34.076+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:31:34.076+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:31:35.735+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:31:35.748+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.699 seconds
+[2023-03-08T21:32:11.032+0000] {processor.py:153} INFO - Started process (PID=1581) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:32:11.051+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:32:11.092+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:32:11.080+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:32:23.568+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:32:23.622+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 12.743 seconds
+[2023-03-08T21:33:19.334+0000] {processor.py:153} INFO - Started process (PID=1664) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:33:19.344+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:33:19.357+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:33:19.356+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:33:33.459+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:33:33.499+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 14.350 seconds
+[2023-03-08T21:35:16.072+0000] {processor.py:153} INFO - Started process (PID=1767) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:35:16.104+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:35:16.121+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:35:16.116+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:35:23.803+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:35:24.414+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 8.366 seconds
+[2023-03-08T21:35:59.233+0000] {processor.py:153} INFO - Started process (PID=1808) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:35:59.241+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:35:59.244+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:35:59.244+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:36:01.195+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:36:01.212+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.988 seconds
+[2023-03-08T21:36:31.647+0000] {processor.py:153} INFO - Started process (PID=1892) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:36:31.649+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:36:31.651+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:36:31.650+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:36:32.514+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:36:32.528+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.887 seconds
+[2023-03-08T21:37:03.364+0000] {processor.py:153} INFO - Started process (PID=1965) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:37:03.367+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:37:03.371+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:37:03.371+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:37:04.685+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:37:04.704+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.348 seconds
+[2023-03-08T21:37:35.365+0000] {processor.py:153} INFO - Started process (PID=2047) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:37:35.367+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:37:35.370+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:37:35.369+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:37:36.284+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:37:36.296+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.935 seconds
+[2023-03-08T21:38:06.503+0000] {processor.py:153} INFO - Started process (PID=2122) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:38:06.506+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:38:06.508+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:38:06.508+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:38:07.707+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:38:07.719+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.223 seconds
+[2023-03-08T21:38:37.986+0000] {processor.py:153} INFO - Started process (PID=2195) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:38:37.988+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:38:37.990+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:38:37.990+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:38:38.850+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:38:38.916+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.937 seconds
+[2023-03-08T21:39:09.476+0000] {processor.py:153} INFO - Started process (PID=2280) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:39:09.481+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:39:09.483+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:39:09.483+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:39:10.423+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:39:10.434+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.964 seconds
+[2023-03-08T21:39:41.248+0000] {processor.py:153} INFO - Started process (PID=2356) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:39:41.251+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:39:41.253+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:39:41.253+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:39:42.162+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:39:42.170+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.928 seconds
+[2023-03-08T21:40:12.237+0000] {processor.py:153} INFO - Started process (PID=2434) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:40:12.240+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:40:12.244+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:40:12.244+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:40:13.339+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:40:13.351+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.120 seconds
+[2023-03-08T21:40:43.880+0000] {processor.py:153} INFO - Started process (PID=2520) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:40:43.882+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:40:43.883+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:40:43.883+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:40:44.816+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:40:44.825+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.951 seconds
+[2023-03-08T21:41:15.669+0000] {processor.py:153} INFO - Started process (PID=2596) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:41:15.671+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:41:15.673+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:41:15.673+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:41:16.582+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:41:16.591+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.927 seconds
+[2023-03-08T21:41:47.027+0000] {processor.py:153} INFO - Started process (PID=2681) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:41:47.029+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:41:47.036+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:41:47.036+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:41:47.881+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:41:47.888+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.867 seconds
+[2023-03-08T21:42:18.564+0000] {processor.py:153} INFO - Started process (PID=2755) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:42:18.567+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:42:18.569+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:42:18.569+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:42:19.578+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:42:19.588+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.030 seconds
+[2023-03-08T21:42:50.169+0000] {processor.py:153} INFO - Started process (PID=2839) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:42:50.173+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:42:50.175+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:42:50.174+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:42:51.190+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:42:51.204+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.041 seconds
+[2023-03-08T21:43:21.324+0000] {processor.py:153} INFO - Started process (PID=2920) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:43:21.327+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:43:21.330+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:43:21.330+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:43:22.361+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:43:22.371+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.053 seconds
+[2023-03-08T21:43:52.445+0000] {processor.py:153} INFO - Started process (PID=2998) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:43:52.453+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:43:52.456+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:43:52.456+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:43:53.906+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:43:53.917+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.484 seconds
+[2023-03-08T21:44:24.368+0000] {processor.py:153} INFO - Started process (PID=3079) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:44:24.374+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:44:24.377+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:44:24.377+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:44:26.125+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:44:26.137+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.775 seconds
+[2023-03-08T21:44:56.320+0000] {processor.py:153} INFO - Started process (PID=3155) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:44:56.331+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:44:56.335+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:44:56.335+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:44:58.321+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:44:58.346+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.056 seconds
+[2023-03-08T21:45:29.233+0000] {processor.py:153} INFO - Started process (PID=3229) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:45:29.242+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:45:29.254+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:45:29.253+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:45:30.984+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:45:30.998+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.779 seconds
+[2023-03-08T21:46:01.592+0000] {processor.py:153} INFO - Started process (PID=3313) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:46:01.594+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:46:01.596+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:46:01.596+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:46:02.460+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:46:02.470+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.883 seconds
+[2023-03-08T21:46:33.284+0000] {processor.py:153} INFO - Started process (PID=3389) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:46:33.288+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:46:33.292+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:46:33.292+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:46:34.843+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:46:34.867+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.591 seconds
+[2023-03-08T21:47:05.738+0000] {processor.py:153} INFO - Started process (PID=3462) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:47:05.742+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:47:05.747+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:47:05.746+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:47:06.790+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:47:06.799+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.070 seconds
+[2023-03-08T21:47:37.358+0000] {processor.py:153} INFO - Started process (PID=3549) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:47:37.360+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:47:37.363+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:47:37.363+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:47:38.226+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:47:38.234+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.881 seconds
+[2023-03-08T21:48:08.750+0000] {processor.py:153} INFO - Started process (PID=3622) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:48:08.755+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:48:08.757+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:48:08.757+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:48:09.765+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:48:09.781+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.036 seconds
+[2023-03-08T21:48:40.358+0000] {processor.py:153} INFO - Started process (PID=3707) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:48:40.360+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:48:40.363+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:48:40.363+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:48:41.224+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:48:41.232+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.881 seconds
+[2023-03-08T21:49:11.661+0000] {processor.py:153} INFO - Started process (PID=3780) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:49:11.664+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:49:11.667+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:49:11.667+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:49:12.561+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:49:12.572+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.916 seconds
+[2023-03-08T21:49:42.663+0000] {processor.py:153} INFO - Started process (PID=3861) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:49:42.666+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:49:42.668+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:49:42.668+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:49:43.654+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:49:43.663+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.007 seconds
+[2023-03-08T21:50:14.550+0000] {processor.py:153} INFO - Started process (PID=3937) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:50:14.553+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:50:14.556+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:50:14.555+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:50:15.420+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:50:15.430+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.887 seconds
+[2023-03-08T21:50:46.218+0000] {processor.py:153} INFO - Started process (PID=4011) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:50:46.223+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:50:46.227+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:50:46.227+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:50:47.317+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:50:47.329+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.119 seconds
+[2023-03-08T21:51:17.578+0000] {processor.py:153} INFO - Started process (PID=4096) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:51:17.582+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:51:17.584+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:51:17.584+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:51:18.463+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:51:18.471+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.898 seconds
+[2023-03-08T21:51:48.964+0000] {processor.py:153} INFO - Started process (PID=4169) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:51:48.969+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:51:48.972+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:51:48.971+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:51:50.035+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:51:50.046+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.088 seconds
+[2023-03-08T21:52:20.328+0000] {processor.py:153} INFO - Started process (PID=4251) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:52:20.333+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:52:20.335+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:52:20.335+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:52:21.594+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:52:21.603+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.282 seconds
+[2023-03-08T21:52:52.199+0000] {processor.py:153} INFO - Started process (PID=4327) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:52:52.202+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:52:52.204+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:52:52.204+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:52:53.258+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:52:53.266+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.074 seconds
+[2023-03-08T21:53:23.493+0000] {processor.py:153} INFO - Started process (PID=4402) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:53:23.495+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:53:23.497+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:53:23.497+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:53:24.487+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:53:24.497+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.008 seconds
+[2023-03-08T21:53:54.628+0000] {processor.py:153} INFO - Started process (PID=4475) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:53:54.632+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:53:54.634+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:53:54.633+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:53:55.585+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:53:55.594+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.971 seconds
+[2023-03-08T21:54:25.741+0000] {processor.py:153} INFO - Started process (PID=4558) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:54:25.745+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:54:25.748+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:54:25.747+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:54:26.636+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:54:26.645+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.909 seconds
+[2023-03-08T21:54:57.659+0000] {processor.py:153} INFO - Started process (PID=4634) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:54:57.662+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:54:57.664+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:54:57.664+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:54:58.506+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:54:58.514+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.859 seconds
+[2023-03-08T21:55:28.872+0000] {processor.py:153} INFO - Started process (PID=4722) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:55:28.875+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:55:28.877+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:55:28.877+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:55:29.726+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:55:29.734+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.868 seconds
+[2023-03-08T21:56:00.497+0000] {processor.py:153} INFO - Started process (PID=4795) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:56:00.502+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:56:00.504+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:56:00.504+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:56:01.428+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:56:01.435+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.944 seconds
+[2023-03-08T21:56:31.555+0000] {processor.py:153} INFO - Started process (PID=4881) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:56:31.559+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:56:31.562+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:56:31.561+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:56:32.758+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:56:32.767+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.222 seconds
+[2023-03-08T21:57:02.992+0000] {processor.py:153} INFO - Started process (PID=4955) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:57:02.997+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:57:02.999+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:57:02.999+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:57:04.135+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:57:04.146+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.162 seconds
+[2023-03-08T21:57:34.347+0000] {processor.py:153} INFO - Started process (PID=5029) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:57:34.350+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:57:34.353+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:57:34.352+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:57:35.312+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:57:35.320+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.979 seconds
+[2023-03-08T21:58:05.385+0000] {processor.py:153} INFO - Started process (PID=5113) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:58:05.387+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:58:05.390+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:58:05.390+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:58:06.491+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:58:06.502+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.125 seconds
+[2023-03-08T21:58:36.892+0000] {processor.py:153} INFO - Started process (PID=5188) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:58:36.897+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:58:36.906+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:58:36.906+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:58:38.246+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:58:38.257+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.371 seconds
+[2023-03-08T21:59:08.439+0000] {processor.py:153} INFO - Started process (PID=5263) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:59:08.444+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:59:08.447+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:59:08.446+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:59:09.281+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:59:09.289+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.855 seconds
+[2023-03-08T21:59:39.351+0000] {processor.py:153} INFO - Started process (PID=5352) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:59:39.353+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T21:59:39.355+0000] {logging_mixin.py:137} INFO - [2023-03-08T21:59:39.355+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:59:40.288+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T21:59:40.297+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.952 seconds
+[2023-03-08T22:00:11.057+0000] {processor.py:153} INFO - Started process (PID=5424) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:00:11.060+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:00:11.063+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:00:11.063+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:00:12.049+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:00:12.059+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.009 seconds
+[2023-03-08T22:00:42.698+0000] {processor.py:153} INFO - Started process (PID=5497) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:00:42.701+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:00:42.702+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:00:42.702+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:00:43.592+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:00:43.600+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.907 seconds
+[2023-03-08T22:01:14.557+0000] {processor.py:153} INFO - Started process (PID=5592) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:01:14.564+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:01:14.571+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:01:14.570+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:01:15.740+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:01:15.751+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.209 seconds
+[2023-03-08T22:01:45.943+0000] {processor.py:153} INFO - Started process (PID=5666) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:01:45.949+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:01:45.954+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:01:45.953+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:01:47.479+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:01:47.493+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.559 seconds
+[2023-03-08T22:02:17.610+0000] {processor.py:153} INFO - Started process (PID=5742) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:02:17.612+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:02:17.614+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:02:17.614+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:02:18.524+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:02:18.533+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.930 seconds
+[2023-03-08T22:02:48.927+0000] {processor.py:153} INFO - Started process (PID=5828) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:02:48.931+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:02:48.934+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:02:48.933+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:02:49.883+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:02:49.893+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.971 seconds
+[2023-03-08T22:03:20.007+0000] {processor.py:153} INFO - Started process (PID=5905) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:03:20.009+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:03:20.011+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:03:20.011+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:03:20.903+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:03:20.912+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.911 seconds
+[2023-03-08T22:03:51.201+0000] {processor.py:153} INFO - Started process (PID=5975) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:03:51.208+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:03:51.212+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:03:51.212+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:03:55.275+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:03:55.327+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 4.145 seconds
+[2023-03-08T22:04:26.109+0000] {processor.py:153} INFO - Started process (PID=6051) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:04:26.114+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:04:26.118+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:04:26.118+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:04:27.766+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:04:27.781+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.685 seconds
+[2023-03-08T22:04:57.921+0000] {processor.py:153} INFO - Started process (PID=6135) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:04:57.925+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:04:57.928+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:04:57.928+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:04:59.199+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:04:59.207+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.292 seconds
+[2023-03-08T22:05:29.354+0000] {processor.py:153} INFO - Started process (PID=6215) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:05:29.356+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:05:29.358+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:05:29.357+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:05:30.490+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:05:30.503+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.154 seconds
+[2023-03-08T22:06:00.666+0000] {processor.py:153} INFO - Started process (PID=6291) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:06:00.668+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:06:00.671+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:06:00.671+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:06:01.714+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:06:01.726+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.067 seconds
+[2023-03-08T22:06:32.512+0000] {processor.py:153} INFO - Started process (PID=6377) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:06:32.517+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:06:32.519+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:06:32.519+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:06:33.622+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:06:33.631+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.127 seconds
+[2023-03-08T22:07:04.451+0000] {processor.py:153} INFO - Started process (PID=6454) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:07:04.458+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:07:04.462+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:07:04.461+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:07:05.932+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:07:05.943+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.504 seconds
+[2023-03-08T22:07:36.347+0000] {processor.py:153} INFO - Started process (PID=6537) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:07:36.350+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:07:36.352+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:07:36.352+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:07:37.387+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:07:37.405+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.063 seconds
+[2023-03-08T22:08:07.716+0000] {processor.py:153} INFO - Started process (PID=6613) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:08:07.719+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:08:07.721+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:08:07.720+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:08:09.244+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:08:09.260+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.549 seconds
+[2023-03-08T22:08:39.638+0000] {processor.py:153} INFO - Started process (PID=6686) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:08:39.644+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:08:39.646+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:08:39.646+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:08:41.776+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:08:41.795+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.162 seconds
+[2023-03-08T22:09:12.132+0000] {processor.py:153} INFO - Started process (PID=6769) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:09:12.135+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:09:12.138+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:09:12.137+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:09:14.136+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:09:14.160+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.035 seconds
+[2023-03-08T22:09:44.864+0000] {processor.py:153} INFO - Started process (PID=6845) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:09:44.869+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:09:44.876+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:09:44.876+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:09:46.562+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:09:46.573+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.735 seconds
+[2023-03-08T22:10:16.946+0000] {processor.py:153} INFO - Started process (PID=6920) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:10:16.956+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:10:16.961+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:10:16.960+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:10:18.053+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:10:18.065+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.130 seconds
+[2023-03-08T22:10:48.693+0000] {processor.py:153} INFO - Started process (PID=6994) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:10:48.696+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:10:48.698+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:10:48.698+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:10:49.645+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:10:49.656+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.969 seconds
+[2023-03-08T22:11:20.376+0000] {processor.py:153} INFO - Started process (PID=7077) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:11:20.379+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:11:20.382+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:11:20.382+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:11:21.328+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:11:21.337+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.968 seconds
+[2023-03-08T22:11:52.039+0000] {processor.py:153} INFO - Started process (PID=7152) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:11:52.044+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:11:52.049+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:11:52.048+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:11:53.238+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:11:53.248+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.218 seconds
+[2023-03-08T22:12:23.316+0000] {processor.py:153} INFO - Started process (PID=7237) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:12:23.318+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:12:23.321+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:12:23.320+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:12:24.353+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:12:24.363+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.054 seconds
+[2023-03-08T22:12:54.848+0000] {processor.py:153} INFO - Started process (PID=7310) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:12:54.849+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:12:54.851+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:12:54.851+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:12:55.864+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:12:55.875+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.035 seconds
+[2023-03-08T22:13:26.186+0000] {processor.py:153} INFO - Started process (PID=7391) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:13:26.190+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:13:26.192+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:13:26.192+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:13:27.133+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:13:27.146+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.964 seconds
+[2023-03-08T22:13:57.651+0000] {processor.py:153} INFO - Started process (PID=7470) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:13:57.654+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:13:57.657+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:13:57.656+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:13:58.658+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:13:58.668+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.022 seconds
+[2023-03-08T22:14:28.738+0000] {processor.py:153} INFO - Started process (PID=7546) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:14:28.740+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:14:28.743+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:14:28.743+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:14:29.651+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:14:29.658+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.926 seconds
+[2023-03-08T22:14:59.741+0000] {processor.py:153} INFO - Started process (PID=7633) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:14:59.743+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:14:59.746+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:14:59.745+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:15:00.668+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:15:00.677+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.941 seconds
+[2023-03-08T22:15:30.966+0000] {processor.py:153} INFO - Started process (PID=7706) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:15:30.975+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:15:30.983+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:15:30.982+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:15:32.198+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:15:32.211+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.262 seconds
+[2023-03-08T22:16:02.779+0000] {processor.py:153} INFO - Started process (PID=7791) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:16:02.783+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:16:02.785+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:16:02.784+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:16:03.735+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:16:03.743+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.970 seconds
+[2023-03-08T22:16:33.833+0000] {processor.py:153} INFO - Started process (PID=7869) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:16:33.836+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:16:33.838+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:16:33.837+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:16:34.795+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:16:34.806+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.978 seconds
+[2023-03-08T22:17:05.209+0000] {processor.py:153} INFO - Started process (PID=7951) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:17:05.213+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:17:05.215+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:17:05.215+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:17:06.250+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:17:06.261+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.058 seconds
+[2023-03-08T22:17:36.761+0000] {processor.py:153} INFO - Started process (PID=8030) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:17:36.766+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:17:36.770+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:17:36.770+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:17:37.902+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:17:37.911+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.156 seconds
+[2023-03-08T22:18:08.011+0000] {processor.py:153} INFO - Started process (PID=8105) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:18:08.017+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:18:08.025+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:18:08.024+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:18:09.607+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:18:09.622+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.621 seconds
+[2023-03-08T22:18:40.331+0000] {processor.py:153} INFO - Started process (PID=8188) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:18:40.335+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:18:40.353+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:18:40.338+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:18:41.959+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:18:41.970+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.657 seconds
+[2023-03-08T22:19:12.271+0000] {processor.py:153} INFO - Started process (PID=8260) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:19:12.275+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:19:12.279+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:19:12.278+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:19:13.586+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:19:13.628+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.365 seconds
+[2023-03-08T22:19:44.540+0000] {processor.py:153} INFO - Started process (PID=8333) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:19:44.552+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:19:44.584+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:19:44.584+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:19:45.584+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:19:45.607+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.074 seconds
+[2023-03-08T22:20:15.883+0000] {processor.py:153} INFO - Started process (PID=8409) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:20:15.886+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:20:15.888+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:20:15.888+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:20:16.967+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:20:16.978+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.101 seconds
+[2023-03-08T22:20:47.190+0000] {processor.py:153} INFO - Started process (PID=8492) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:20:47.192+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:20:47.195+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:20:47.195+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:20:48.341+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:20:48.352+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.169 seconds
+[2023-03-08T22:21:18.453+0000] {processor.py:153} INFO - Started process (PID=8571) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:21:18.456+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T22:21:18.459+0000] {logging_mixin.py:137} INFO - [2023-03-08T22:21:18.458+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:21:20.912+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T22:21:20.935+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 2.488 seconds

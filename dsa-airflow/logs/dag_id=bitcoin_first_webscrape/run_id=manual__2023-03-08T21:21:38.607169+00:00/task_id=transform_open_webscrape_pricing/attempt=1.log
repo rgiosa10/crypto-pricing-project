@@ -1,0 +1,24 @@
+[2023-03-08T21:21:58.838+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bitcoin_first_webscrape.transform_open_webscrape_pricing manual__2023-03-08T21:21:38.607169+00:00 [queued]>
+[2023-03-08T21:21:58.863+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bitcoin_first_webscrape.transform_open_webscrape_pricing manual__2023-03-08T21:21:38.607169+00:00 [queued]>
+[2023-03-08T21:21:58.866+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-08T21:21:58.869+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-03-08T21:21:58.871+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-08T21:21:58.913+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): transform_open_webscrape_pricing> on 2023-03-08 21:21:38.607169+00:00
+[2023-03-08T21:21:58.956+0000] {standard_task_runner.py:55} INFO - Started process 128 to run task
+[2023-03-08T21:21:58.995+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'bitcoin_first_webscrape', 'transform_open_webscrape_pricing', 'manual__2023-03-08T21:21:38.607169+00:00', '--job-id', '247', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpeyq57rc_']
+[2023-03-08T21:21:59.005+0000] {standard_task_runner.py:83} INFO - Job 247: Subtask transform_open_webscrape_pricing
+[2023-03-08T21:21:59.213+0000] {task_command.py:388} INFO - Running <TaskInstance: bitcoin_first_webscrape.transform_open_webscrape_pricing manual__2023-03-08T21:21:38.607169+00:00 [running]> on host cd114ba8c1f8
+[2023-03-08T21:21:59.467+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bitcoin_first_webscrape
+AIRFLOW_CTX_TASK_ID=transform_open_webscrape_pricing
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-08T21:21:38.607169+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-08T21:21:38.607169+00:00
+[2023-03-08T21:21:59.596+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-08T21:21:59.674+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=bitcoin_first_webscrape, task_id=transform_open_webscrape_pricing, execution_date=20230308T212138, start_date=20230308T212158, end_date=20230308T212159
+[2023-03-08T21:21:59.798+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-03-08T21:21:59.879+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
