@@ -1,0 +1,33 @@
+[2023-03-08T17:00:58.311+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bitcoin_second_webscrape.chatgpt_prediction manual__2023-03-08T17:00:28.852949+00:00 [queued]>
+[2023-03-08T17:00:58.326+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bitcoin_second_webscrape.chatgpt_prediction manual__2023-03-08T17:00:28.852949+00:00 [queued]>
+[2023-03-08T17:00:58.328+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-08T17:00:58.329+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-03-08T17:00:58.331+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-08T17:00:58.355+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): chatgpt_prediction> on 2023-03-08 17:00:28.852949+00:00
+[2023-03-08T17:00:58.372+0000] {standard_task_runner.py:55} INFO - Started process 375 to run task
+[2023-03-08T17:00:58.378+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'bitcoin_second_webscrape', 'chatgpt_prediction', 'manual__2023-03-08T17:00:28.852949+00:00', '--job-id', '213', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpabreiw6n']
+[2023-03-08T17:00:58.380+0000] {standard_task_runner.py:83} INFO - Job 213: Subtask chatgpt_prediction
+[2023-03-08T17:00:58.492+0000] {task_command.py:388} INFO - Running <TaskInstance: bitcoin_second_webscrape.chatgpt_prediction manual__2023-03-08T17:00:28.852949+00:00 [running]> on host cd114ba8c1f8
+[2023-03-08T17:00:58.597+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bitcoin_second_webscrape
+AIRFLOW_CTX_TASK_ID=chatgpt_prediction
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-08T17:00:28.852949+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-08T17:00:28.852949+00:00
+[2023-03-08T17:00:58.618+0000] {taskinstance.py:1768} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 192, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/openai.py", line 26, in chat_gpt_prediction
+    completion = openai.Completion.create(
+AttributeError: module 'openai' has no attribute 'Completion'
+[2023-03-08T17:00:58.631+0000] {taskinstance.py:1323} INFO - Marking task as FAILED. dag_id=bitcoin_second_webscrape, task_id=chatgpt_prediction, execution_date=20230308T170028, start_date=20230308T170058, end_date=20230308T170058
+[2023-03-08T17:00:58.651+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 213 for task chatgpt_prediction (module 'openai' has no attribute 'Completion'; 375)
+[2023-03-08T17:00:58.676+0000] {local_task_job.py:208} INFO - Task exited with return code 1
+[2023-03-08T17:00:58.703+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check

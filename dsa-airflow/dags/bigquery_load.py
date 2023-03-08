@@ -2,6 +2,7 @@ from airflow.models import Variable
 #from airflow.hooks.filesystem import FSHook
 import pandas as pd
 from google.cloud import bigquery
+from google.cloud import storage
 #from google.oauth2 import service_account
 from google.cloud.exceptions import NotFound
 import yaml
@@ -43,6 +44,7 @@ TABLE_NAME = config['table']
 
 #create bigquery client
 client = bigquery.Client()
+s_client = storage.Client()
 
 #create dataset_id and table_ids
 dataset_id = f"{PROJECT_NAME}.{DATASET_NAME}"
@@ -87,19 +89,27 @@ def create_table():
 
     job.result()
 
-def google_drive_upload():
-    from pydrive.auth import GoogleAuth
-    from pydrive.drive import GoogleDrive
-    import os
+def gcs_upload():
+    s_client = storage.Client()
+    
+    export_bucket = s_client.get_bucket('bitcoin_pricing')
+    blob = export_bucket.blob(config['bitcoin_consolidated'])
+    blob.upload_from_filename(os.path.join(data_dir,config['bitcoin_consolidated']))
+    
+    
+    #from pydrive.auth import GoogleAuth
+    #from pydrive.drive import GoogleDrive
+    #import os
 
-    data_dir = './data/'
+    #data_dir = './data/'
 
-    gauth = GoogleAuth()
-    drive = GoogleDrive(gauth)
+    #gauth = GoogleAuth()
+    #gauth.LoadCredentialsFile('/opt/airflow/dags/client_secrets.json')
+    #drive = GoogleDrive(gauth)
 
-    file = drive.CreateFile({'parents': [{'id': '1DDqEwMd87_SP5iLse-Luw3TMwJVLCy3W'}]})
-    file.SetContentFile(os.path.join(data_dir,'combined_BTC_hist_pricing.csv'))
-    file.Upload()
+    #file = drive.CreateFile({'parents': [{'id': '1DDqEwMd87_SP5iLse-Luw3TMwJVLCy3W'}]})
+    #file.SetContentFile(os.path.join(data_dir,'combined_BTC_hist_pricing.csv'))
+    #file.Upload()
     
     #delete file
     #os.remove(os.path.join(data_dir, config['bitcoin_consolidated']))
