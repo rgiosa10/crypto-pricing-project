@@ -915,3 +915,70 @@ SyntaxError: invalid syntax
 [2023-03-08T18:00:30.842+0000] {processor.py:153} INFO - Started process (PID=9410) to work on /opt/airflow/dags/bigquery_load.py
 [2023-03-08T18:00:30.846+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
 [2023-03-08T18:00:30.851+0000] {logging_mixin.py:137} INFO - [2023-03-08T18:00:30.851+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:00:32.335+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:00:32.350+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.518 seconds
+[2023-03-08T18:01:02.600+0000] {processor.py:153} INFO - Started process (PID=9492) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:01:02.602+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T18:01:02.609+0000] {logging_mixin.py:137} INFO - [2023-03-08T18:01:02.609+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:01:03.949+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:01:03.960+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.366 seconds
+[2023-03-08T18:01:34.032+0000] {processor.py:153} INFO - Started process (PID=9572) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:01:34.035+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T18:01:34.037+0000] {logging_mixin.py:137} INFO - [2023-03-08T18:01:34.037+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:01:35.293+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:01:35.322+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.296 seconds
+[2023-03-08T18:02:05.647+0000] {processor.py:153} INFO - Started process (PID=9646) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:02:05.656+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T18:02:05.672+0000] {logging_mixin.py:137} INFO - [2023-03-08T18:02:05.672+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:02:06.778+0000] {logging_mixin.py:137} INFO - [2023-03-08T18:02:06.767+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/bigquery_load.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/bigquery_load.py", line 20, in <module>
+    config: dict =  yaml.full_load(open_yaml)
+  File "/home/airflow/.local/lib/python3.7/site-packages/yaml/__init__.py", line 105, in full_load
+    return load(stream, FullLoader)
+  File "/home/airflow/.local/lib/python3.7/site-packages/yaml/__init__.py", line 81, in load
+    return loader.get_single_data()
+  File "/home/airflow/.local/lib/python3.7/site-packages/yaml/constructor.py", line 49, in get_single_data
+    node = self.get_single_node()
+  File "/home/airflow/.local/lib/python3.7/site-packages/yaml/composer.py", line 36, in get_single_node
+    document = self.compose_document()
+  File "/home/airflow/.local/lib/python3.7/site-packages/yaml/composer.py", line 55, in compose_document
+    node = self.compose_node(None, None)
+  File "/home/airflow/.local/lib/python3.7/site-packages/yaml/composer.py", line 84, in compose_node
+    node = self.compose_mapping_node(anchor)
+  File "/home/airflow/.local/lib/python3.7/site-packages/yaml/composer.py", line 127, in compose_mapping_node
+    while not self.check_event(MappingEndEvent):
+  File "/home/airflow/.local/lib/python3.7/site-packages/yaml/parser.py", line 98, in check_event
+    self.current_event = self.state()
+  File "/home/airflow/.local/lib/python3.7/site-packages/yaml/parser.py", line 439, in parse_block_mapping_key
+    "expected <block end>, but found %r" % token.id, token.start_mark)
+yaml.parser.ParserError: while parsing a block mapping
+  in "/opt/airflow/dags/config.yml", line 1, column 1
+expected <block end>, but found '<block sequence start>'
+  in "/opt/airflow/dags/config.yml", line 22, column 3
+[2023-03-08T18:02:06.784+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:02:06.815+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.193 seconds
+[2023-03-08T18:02:37.139+0000] {processor.py:153} INFO - Started process (PID=9733) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:02:37.144+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T18:02:37.147+0000] {logging_mixin.py:137} INFO - [2023-03-08T18:02:37.147+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:02:38.160+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:02:38.172+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.039 seconds
+[2023-03-08T18:03:08.280+0000] {processor.py:153} INFO - Started process (PID=9806) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:03:08.283+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T18:03:08.284+0000] {logging_mixin.py:137} INFO - [2023-03-08T18:03:08.284+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:03:09.213+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:03:09.223+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 0.948 seconds
+[2023-03-08T18:03:39.736+0000] {processor.py:153} INFO - Started process (PID=9879) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:03:39.741+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T18:03:39.745+0000] {logging_mixin.py:137} INFO - [2023-03-08T18:03:39.745+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:03:41.495+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:03:41.509+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.794 seconds
+[2023-03-08T18:04:12.466+0000] {processor.py:153} INFO - Started process (PID=9964) to work on /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:04:12.471+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/bigquery_load.py for tasks to queue
+[2023-03-08T18:04:12.474+0000] {logging_mixin.py:137} INFO - [2023-03-08T18:04:12.474+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:04:13.569+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/bigquery_load.py
+[2023-03-08T18:04:13.616+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/bigquery_load.py took 1.161 seconds
