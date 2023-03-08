@@ -10,7 +10,6 @@ import numpy as np
 
 
 def chat_gpt_prediction():
-    from dotenv import load_dotenv
     import os
     import openai
     from bigquery_load import data_dir
@@ -20,10 +19,15 @@ def chat_gpt_prediction():
     from datetime import datetime
     import json
     import numpy as np
-    
-    load_dotenv()
+    from airflow.models import Variable
 
-    openai.api_key = os.getenv('OPENAI_API_KEY')
+    _default_config_path = '/opt/airflow/dags/config.yml'
+    CONF_PATH = Variable.get('config_file', default_var=_default_config_path)
+    config: dict = {}
+    with open(CONF_PATH) as open_yaml:
+        config: dict =  yaml.full_load(open_yaml)
+
+    openai.api_key = config['OPENAI_API_KEY']
 
     #df = pd.read_csv(os.path.join(data_dir,'bitcoin_pricing.csv'), header=0)
 
