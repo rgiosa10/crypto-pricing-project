@@ -17,7 +17,7 @@ from dateutil.tz import tzlocal
 from webscrape import scrape_yahoo, open_raw_yahoo_transform, close_raw_yahoo_transform, stg_file_setup
 from history import hist_transf
 from bigquery_load import create_dataset, create_table, gcs_upload
-from openai import chat_gpt_prediction
+from openai_predict import chat_gpt_prediction
 
 sleep_minutes = 390
 
@@ -157,9 +157,20 @@ with DAG(
         #doc_md = google_drive_upload.__doc__        
     #)
 
-    chatgpt_prediction_task = PythonOperator(
+    chatgpt_prediction_task = PythonVirtualenvOperator(
         task_id='chatgpt_prediction',
         python_callable = chat_gpt_prediction,
+        requirements=['selenium', 
+                   'pandas',
+                   'gcsfs',
+                   'fsspec',
+                   'google-cloud-storage',
+                   'google-cloud-bigquery',
+                   'google-auth',
+                   'apache-airflow-providers-google',
+                   'apache-airflow[google]',
+                   'openai',
+                   ],
         doc_md = chat_gpt_prediction.__doc__        
     )
 
