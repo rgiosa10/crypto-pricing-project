@@ -21,7 +21,7 @@ def chat_gpt_prediction():
     import numpy as np
     from airflow.models import Variable
 
-    _default_config_path = '/opt/airflow/dags/config.yml'
+    _default_config_path = '/opt/airflow/dags/chatgpt.yml'
     CONF_PATH = Variable.get('config_file', default_var=_default_config_path)
     config: dict = {}
     with open(CONF_PATH) as open_yaml:
