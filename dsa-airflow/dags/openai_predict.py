@@ -23,7 +23,7 @@ def chat_gpt_prediction():
     
     load_dotenv()
 
-    openai.api_key = os.getenv('OPENAI_API_KEY')
+    openai.api_key = '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' #os.getenv('OPENAI_API_KEY')
 
     #df = pd.read_csv(os.path.join(data_dir,'bitcoin_pricing.csv'), header=0)
 
