@@ -1,7 +1,7 @@
 import os
 from datetime import datetime,timedelta
 from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow.operators.python import PythonOperator, PythonVirtualenvOperator
 from airflow.sensors.time_delta import TimeDeltaSensor
 from airflow.operators.empty import EmptyOperator
 from airflow.sensors.filesystem import FileSensor
@@ -16,7 +16,7 @@ from dateutil.tz import tzlocal
 # local imports
 from webscrape import scrape_yahoo, open_raw_yahoo_transform, close_raw_yahoo_transform, stg_file_setup
 from history import hist_transf
-from bigquery_load import create_dataset, create_table
+from bigquery_load import create_dataset, create_table, google_drive_upload
 from openai import chat_gpt_prediction
 
 sleep_minutes = 390
@@ -127,6 +127,30 @@ with DAG(
         doc_md = create_table.__doc__        
     )
 
+    google_drive_upload_task = PythonVirtualenvOperator(
+        task_id='google_drive_upload',
+        python_callable = google_drive_upload,
+        requirements=[
+                    'selenium', 
+                    'pandas',
+                    'gcsfs',
+                    'fsspec',
+                    'google-cloud-storage',
+                    'google-cloud-bigquery',
+                    'google-auth',
+                    'beautifulsoup4',
+                    'lxml',
+                    'html5lib',
+                    'pytz',
+                    'tzwhere',
+                    'apache-airflow-providers-google',
+                    'apache-airflow[google]',
+                    'openai',
+                    'pydrive'
+                    ],
+        doc_md = google_drive_upload.__doc__        
+    )
+
     chatgpt_prediction_task = PythonOperator(
         task_id='chatgpt_prediction',
         python_callable = chat_gpt_prediction,
@@ -136,6 +160,6 @@ with DAG(
 #task flow
 history_data_task >> webscrape_task_1 >> transform_open_pricing_task
 
-webscrape_task_2 >> transform_close_pricing >> stg_file_creation >> create_dataset_task >> create_table_task >> chatgpt_prediction_task
+webscrape_task_2 >> transform_close_pricing >> stg_file_creation >> create_dataset_task >> create_table_task >> google_drive_upload_task >> chatgpt_prediction_task
 
     

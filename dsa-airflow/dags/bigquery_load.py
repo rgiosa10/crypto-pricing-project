@@ -86,6 +86,20 @@ def create_table():
         job = client.load_table_from_file(source_file, table_id, job_config=job_config)
 
     job.result()
+
+def google_drive_upload():
+    from pydrive.auth import GoogleAuth
+    from pydrive.drive import GoogleDrive
+    import os
+
+    data_dir = './data/'
+
+    gauth = GoogleAuth()
+    drive = GoogleDrive(gauth)
+
+    file = drive.CreateFile({'parents': [{'id': '1DDqEwMd87_SP5iLse-Luw3TMwJVLCy3W'}]})
+    file.SetContentFile(os.path.join(data_dir,'combined_BTC_hist_pricing.csv'))
+    file.Upload()
     
     #delete file
     #os.remove(os.path.join(data_dir, config['bitcoin_consolidated']))

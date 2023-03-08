@@ -316,3 +316,1999 @@ Please take a look at these docs to improve your DAG import time:
 * https://airflow.apache.org/docs/apache-airflow/2.5.1/best-practices.html#reducing-dag-complexity, PID: 5467
 [2023-03-07T00:31:14.987+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
 [2023-03-07T00:31:15.728+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 33.881 seconds
+[2023-03-07T22:03:13.817+0000] {processor.py:153} INFO - Started process (PID=57) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:03:13.828+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:03:13.843+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:03:13.842+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:03:18.481+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:03:18.451+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:03:18.499+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:03:18.747+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 5.051 seconds
+[2023-03-07T22:03:53.492+0000] {processor.py:153} INFO - Started process (PID=128) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:03:53.499+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:03:53.503+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:03:53.502+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:03:55.578+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:03:55.545+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:03:55.602+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:03:55.738+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.261 seconds
+[2023-03-07T22:04:26.873+0000] {processor.py:153} INFO - Started process (PID=199) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:04:26.911+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:04:26.953+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:04:26.952+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:04:29.486+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:04:29.473+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:04:29.491+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:04:29.545+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.800 seconds
+[2023-03-07T22:05:00.192+0000] {processor.py:153} INFO - Started process (PID=267) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:05:00.199+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:05:00.204+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:05:00.204+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:05:09.741+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:05:09.726+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:05:09.746+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:05:09.796+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 9.632 seconds
+[2023-03-07T22:05:40.239+0000] {processor.py:153} INFO - Started process (PID=341) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:05:40.285+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:05:40.310+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:05:40.309+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:05:42.214+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:05:42.191+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:05:42.218+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:05:42.282+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.101 seconds
+[2023-03-07T22:06:12.712+0000] {processor.py:153} INFO - Started process (PID=400) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:06:12.716+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:06:12.725+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:06:12.725+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:06:13.732+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:06:13.717+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:06:13.739+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:06:13.779+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.076 seconds
+[2023-03-07T22:07:13.171+0000] {processor.py:153} INFO - Started process (PID=448) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:07:13.178+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:07:13.193+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:07:13.190+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:07:14.747+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:07:14.731+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:07:14.750+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:07:14.827+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.689 seconds
+[2023-03-07T22:08:36.573+0000] {processor.py:153} INFO - Started process (PID=541) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:08:36.578+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:08:36.584+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:08:36.583+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:08:40.020+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:08:39.994+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:08:40.028+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:08:40.206+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.659 seconds
+[2023-03-07T22:09:10.680+0000] {processor.py:153} INFO - Started process (PID=616) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:09:10.684+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:09:10.687+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:09:10.686+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:09:11.530+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:09:11.524+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:09:11.532+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:09:11.570+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.895 seconds
+[2023-03-07T22:09:41.694+0000] {processor.py:153} INFO - Started process (PID=691) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:09:41.698+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:09:41.701+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:09:41.701+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:09:42.467+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:09:42.461+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:09:42.470+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:09:42.503+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.821 seconds
+[2023-03-07T22:10:12.877+0000] {processor.py:153} INFO - Started process (PID=762) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:10:12.880+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:10:12.883+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:10:12.882+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:10:13.772+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:10:13.764+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:10:13.774+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:10:13.806+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.935 seconds
+[2023-03-07T22:10:44.018+0000] {processor.py:153} INFO - Started process (PID=835) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:10:44.022+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:10:44.025+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:10:44.024+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:10:44.832+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:10:44.826+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:10:44.834+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:10:44.863+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.852 seconds
+[2023-03-07T22:13:14.226+0000] {processor.py:153} INFO - Started process (PID=43) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:13:14.229+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:13:14.233+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:13:14.232+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:13:15.995+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:13:15.984+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:13:15.999+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:13:16.081+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.873 seconds
+[2023-03-07T22:13:46.213+0000] {processor.py:153} INFO - Started process (PID=116) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:13:46.217+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:13:46.220+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:13:46.220+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:13:46.714+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:13:46.700+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:13:46.716+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:13:46.989+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.792 seconds
+[2023-03-07T22:14:17.141+0000] {processor.py:153} INFO - Started process (PID=189) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:14:17.143+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:14:17.145+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:14:17.145+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:14:17.739+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:14:17.735+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:14:17.741+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:14:17.764+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.628 seconds
+[2023-03-07T22:14:48.166+0000] {processor.py:153} INFO - Started process (PID=260) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:14:48.169+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:14:48.170+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:14:48.170+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:14:48.608+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:14:48.602+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:14:48.609+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:14:48.637+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.477 seconds
+[2023-03-07T22:15:18.838+0000] {processor.py:153} INFO - Started process (PID=341) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:15:18.841+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:15:18.844+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:15:18.844+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:15:19.319+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:15:19.311+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:15:19.343+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:15:19.385+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.552 seconds
+[2023-03-07T22:15:49.564+0000] {processor.py:153} INFO - Started process (PID=415) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:15:49.567+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:15:49.569+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:15:49.569+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:15:50.099+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:15:50.093+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:15:50.102+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:15:50.322+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.767 seconds
+[2023-03-07T22:16:21.390+0000] {processor.py:153} INFO - Started process (PID=488) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:16:21.403+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:16:21.412+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:16:21.410+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:16:23.550+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:16:23.530+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:16:23.555+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:16:23.636+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.268 seconds
+[2023-03-07T22:16:57.899+0000] {processor.py:153} INFO - Started process (PID=553) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:16:57.909+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:16:57.915+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:16:57.914+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:16:58.967+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:16:58.952+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:16:58.971+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:16:59.037+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.150 seconds
+[2023-03-07T22:17:29.584+0000] {processor.py:153} INFO - Started process (PID=625) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:17:29.591+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:17:29.594+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:17:29.594+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:17:30.752+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:17:30.733+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:17:30.756+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:17:30.822+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.246 seconds
+[2023-03-07T22:18:01.128+0000] {processor.py:153} INFO - Started process (PID=697) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:18:01.132+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:18:01.141+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:18:01.140+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:18:01.895+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:18:01.884+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:18:01.899+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:18:02.204+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.086 seconds
+[2023-03-07T22:18:33.066+0000] {processor.py:153} INFO - Started process (PID=768) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:18:33.073+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:18:33.077+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:18:33.077+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:18:34.109+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:18:34.101+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:18:34.113+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:18:34.157+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.103 seconds
+[2023-03-07T22:19:04.308+0000] {processor.py:153} INFO - Started process (PID=842) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:19:04.312+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:19:04.318+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:19:04.317+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:19:05.237+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:19:05.225+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:19:05.240+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:19:05.309+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.014 seconds
+[2023-03-07T22:19:35.714+0000] {processor.py:153} INFO - Started process (PID=914) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:19:35.717+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:19:35.722+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:19:35.721+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:19:36.719+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:19:36.708+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:19:36.723+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:19:36.788+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.086 seconds
+[2023-03-07T22:20:07.050+0000] {processor.py:153} INFO - Started process (PID=987) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:20:07.059+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:20:07.066+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:20:07.066+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:20:08.559+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:20:08.551+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:20:08.562+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:20:08.607+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.567 seconds
+[2023-03-07T22:20:39.041+0000] {processor.py:153} INFO - Started process (PID=1059) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:20:39.046+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:20:39.055+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:20:39.054+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:20:40.534+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:20:40.519+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:20:40.540+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:20:40.600+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.570 seconds
+[2023-03-07T22:21:12.110+0000] {processor.py:153} INFO - Started process (PID=1130) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:21:12.139+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:21:12.148+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:21:12.148+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:21:13.964+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:21:13.944+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:21:13.969+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:21:14.231+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.185 seconds
+[2023-03-07T22:21:44.944+0000] {processor.py:153} INFO - Started process (PID=1203) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:21:44.948+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:21:44.953+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:21:44.952+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:21:46.126+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:21:46.116+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:21:46.128+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:21:46.171+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.237 seconds
+[2023-03-07T22:22:17.039+0000] {processor.py:153} INFO - Started process (PID=1283) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:22:17.065+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:22:17.100+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:22:17.099+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:22:19.010+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:22:18.998+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:22:19.014+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:22:19.611+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.605 seconds
+[2023-03-07T22:22:50.405+0000] {processor.py:153} INFO - Started process (PID=1351) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:22:50.410+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:22:50.413+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:22:50.413+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:22:51.700+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:22:51.690+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:22:51.705+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:22:51.763+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.367 seconds
+[2023-03-07T22:23:21.980+0000] {processor.py:153} INFO - Started process (PID=1424) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:23:21.987+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:23:21.993+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:23:21.993+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:23:22.733+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:23:22.724+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:23:22.738+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:23:22.788+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.818 seconds
+[2023-03-07T22:23:55.056+0000] {processor.py:153} INFO - Started process (PID=1494) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:23:55.065+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:23:55.075+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:23:55.074+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:23:56.754+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:23:56.742+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:23:56.758+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:23:56.838+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.809 seconds
+[2023-03-07T22:26:08.378+0000] {processor.py:153} INFO - Started process (PID=60) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:26:08.387+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:26:08.394+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:26:08.392+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:26:10.624+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:26:10.612+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:26:10.631+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:26:10.690+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.337 seconds
+[2023-03-07T22:26:41.086+0000] {processor.py:153} INFO - Started process (PID=131) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:26:41.089+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:26:41.092+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:26:41.092+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:26:41.928+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:26:41.922+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:26:41.931+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:26:41.961+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.882 seconds
+[2023-03-07T22:27:12.420+0000] {processor.py:153} INFO - Started process (PID=202) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:27:12.422+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:27:12.424+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:27:12.424+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:27:13.137+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:27:13.131+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:27:13.139+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:27:13.163+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.749 seconds
+[2023-03-07T22:27:43.270+0000] {processor.py:153} INFO - Started process (PID=274) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:27:43.278+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:27:43.281+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:27:43.281+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:27:43.986+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:27:43.980+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:27:43.990+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:27:44.017+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.752 seconds
+[2023-03-07T22:29:36.071+0000] {processor.py:153} INFO - Started process (PID=49) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:29:36.079+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:29:36.092+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:29:36.091+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:29:38.653+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:29:38.623+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:29:38.659+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:29:38.809+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.755 seconds
+[2023-03-07T22:30:09.112+0000] {processor.py:153} INFO - Started process (PID=119) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:30:09.118+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:30:09.122+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:30:09.121+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:30:09.800+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:30:09.792+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:30:09.803+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:30:10.060+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.956 seconds
+[2023-03-07T22:30:40.154+0000] {processor.py:153} INFO - Started process (PID=190) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:30:40.157+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:30:40.159+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:30:40.159+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:30:40.935+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:30:40.929+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:30:40.940+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:30:40.969+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.823 seconds
+[2023-03-07T22:31:11.217+0000] {processor.py:153} INFO - Started process (PID=259) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:31:11.223+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:31:11.226+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:31:11.226+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:31:11.843+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:31:11.834+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:31:11.846+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:31:11.883+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.674 seconds
+[2023-03-07T22:42:36.975+0000] {processor.py:153} INFO - Started process (PID=44) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:42:36.978+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:42:36.980+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:42:36.980+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:42:38.056+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:42:38.041+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:42:38.059+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:42:38.110+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.150 seconds
+[2023-03-07T22:43:08.278+0000] {processor.py:153} INFO - Started process (PID=116) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:43:08.281+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:43:08.283+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:43:08.283+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:43:08.786+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:43:08.781+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:43:08.790+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:43:09.003+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.732 seconds
+[2023-03-07T22:43:39.107+0000] {processor.py:153} INFO - Started process (PID=185) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:43:39.110+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:43:39.115+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:43:39.114+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:43:39.780+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:43:39.775+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:43:39.782+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:43:39.805+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.705 seconds
+[2023-03-07T22:44:10.654+0000] {processor.py:153} INFO - Started process (PID=256) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:44:10.657+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:44:10.661+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:44:10.660+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:44:11.353+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:44:11.347+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:44:11.354+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:44:11.385+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.741 seconds
+[2023-03-07T22:44:41.564+0000] {processor.py:153} INFO - Started process (PID=336) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:44:41.570+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:44:41.573+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:44:41.573+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:44:42.269+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:44:42.259+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:44:42.272+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:44:42.321+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.766 seconds
+[2023-03-07T22:45:12.976+0000] {processor.py:153} INFO - Started process (PID=410) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:45:12.985+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:45:12.994+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:45:12.993+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:45:13.803+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:45:13.791+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:45:13.806+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:45:14.157+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.203 seconds
+[2023-03-07T22:45:44.843+0000] {processor.py:153} INFO - Started process (PID=481) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:45:44.846+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:45:44.848+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:45:44.848+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:45:45.609+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:45:45.600+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:45:45.611+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:45:45.642+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.806 seconds
+[2023-03-07T22:46:15.830+0000] {processor.py:153} INFO - Started process (PID=552) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:46:15.834+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:46:15.837+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:46:15.837+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:46:16.743+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:46:16.732+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:46:16.753+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:46:16.804+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.984 seconds
+[2023-03-07T22:46:46.991+0000] {processor.py:153} INFO - Started process (PID=623) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:46:46.999+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:46:47.008+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:46:47.007+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:46:47.689+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:46:47.680+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:46:47.691+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:46:47.726+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.754 seconds
+[2023-03-07T22:47:18.691+0000] {processor.py:153} INFO - Started process (PID=693) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:47:18.695+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:47:18.699+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:47:18.698+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:47:19.286+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:47:19.278+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:47:19.288+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:47:19.339+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.659 seconds
+[2023-03-07T22:51:06.060+0000] {processor.py:153} INFO - Started process (PID=47) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:51:06.065+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:51:06.068+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:51:06.068+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:51:07.538+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:51:07.528+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:51:07.544+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:51:07.626+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.580 seconds
+[2023-03-07T22:51:37.862+0000] {processor.py:153} INFO - Started process (PID=116) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:51:37.865+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:51:37.867+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:51:37.867+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:51:38.328+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:51:38.322+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:51:38.329+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:51:38.546+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.689 seconds
+[2023-03-07T22:52:08.701+0000] {processor.py:153} INFO - Started process (PID=186) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:52:08.706+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:52:08.709+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:52:08.709+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:52:09.534+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:52:09.528+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:52:09.537+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:52:09.567+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.872 seconds
+[2023-03-07T22:52:39.712+0000] {processor.py:153} INFO - Started process (PID=257) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:52:39.715+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:52:39.718+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:52:39.718+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:52:40.284+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:52:40.277+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:52:40.286+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:52:40.320+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.615 seconds
+[2023-03-07T22:53:10.536+0000] {processor.py:153} INFO - Started process (PID=328) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:53:10.541+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:53:10.544+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:53:10.544+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:53:11.157+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:53:11.149+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:53:11.159+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:53:11.194+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.667 seconds
+[2023-03-07T22:53:41.268+0000] {processor.py:153} INFO - Started process (PID=400) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:53:41.274+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:53:41.278+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:53:41.278+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:53:41.941+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:53:41.934+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:53:41.943+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:53:42.194+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.936 seconds
+[2023-03-07T22:54:13.198+0000] {processor.py:153} INFO - Started process (PID=473) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:54:13.205+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:54:13.208+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:54:13.208+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:54:14.300+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:54:14.291+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:54:14.304+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:54:14.347+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.158 seconds
+[2023-03-07T22:54:45.728+0000] {processor.py:153} INFO - Started process (PID=545) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:54:45.733+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:54:45.741+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:54:45.740+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:54:47.303+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:54:47.289+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:54:47.313+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:54:47.412+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.699 seconds
+[2023-03-07T22:56:34.584+0000] {processor.py:153} INFO - Started process (PID=58) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:56:34.599+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:56:34.604+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:56:34.604+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:56:37.273+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:56:37.250+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:56:37.291+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:56:37.461+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.899 seconds
+[2023-03-07T22:57:07.821+0000] {processor.py:153} INFO - Started process (PID=132) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:57:07.839+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:57:07.843+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:57:07.843+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:57:09.646+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:57:09.632+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:57:09.650+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:57:10.130+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.352 seconds
+[2023-03-07T22:57:40.314+0000] {processor.py:153} INFO - Started process (PID=198) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:57:40.322+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:57:40.328+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:57:40.327+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:57:42.325+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:57:42.314+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:57:42.329+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:57:42.383+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.088 seconds
+[2023-03-07T22:58:12.686+0000] {processor.py:153} INFO - Started process (PID=263) to work on /opt/airflow/dags/history.py
+[2023-03-07T22:58:12.691+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T22:58:12.695+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:58:12.695+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T22:58:13.622+0000] {logging_mixin.py:137} INFO - [2023-03-07T22:58:13.613+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T22:58:13.625+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T22:58:13.678+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.001 seconds
+[2023-03-07T23:00:26.679+0000] {processor.py:153} INFO - Started process (PID=59) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:00:26.692+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:00:26.701+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:00:26.700+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:00:29.208+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:00:29.191+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:00:29.211+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:00:29.287+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.633 seconds
+[2023-03-07T23:01:00.200+0000] {processor.py:153} INFO - Started process (PID=129) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:01:00.214+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:01:00.229+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:01:00.229+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:01:02.395+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:01:02.387+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:01:02.398+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:01:02.448+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.263 seconds
+[2023-03-07T23:01:33.257+0000] {processor.py:153} INFO - Started process (PID=200) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:01:33.263+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:01:33.266+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:01:33.266+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:01:34.161+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:01:34.154+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:01:34.163+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:01:34.210+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.960 seconds
+[2023-03-07T23:02:04.388+0000] {processor.py:153} INFO - Started process (PID=275) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:02:04.394+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:02:04.406+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:02:04.405+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:02:05.558+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:02:05.551+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:02:05.562+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:02:05.605+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.241 seconds
+[2023-03-07T23:02:36.296+0000] {processor.py:153} INFO - Started process (PID=347) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:02:36.301+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:02:36.304+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:02:36.304+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:02:37.658+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:02:37.647+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:02:37.662+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:02:37.739+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.451 seconds
+[2023-03-07T23:04:38.725+0000] {processor.py:153} INFO - Started process (PID=58) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:04:38.734+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:04:38.744+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:04:38.742+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:04:43.273+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:04:43.228+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:04:43.276+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:04:43.390+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 4.691 seconds
+[2023-03-07T23:05:13.863+0000] {processor.py:153} INFO - Started process (PID=127) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:05:13.869+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:05:13.883+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:05:13.882+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:05:16.923+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:05:16.904+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:05:16.935+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:05:17.122+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.275 seconds
+[2023-03-07T23:05:47.880+0000] {processor.py:153} INFO - Started process (PID=200) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:05:47.887+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:05:47.891+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:05:47.891+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:05:49.654+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:05:49.641+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:05:49.656+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:05:49.710+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.843 seconds
+[2023-03-07T23:06:20.167+0000] {processor.py:153} INFO - Started process (PID=272) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:06:20.171+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:06:20.174+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:06:20.173+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:06:21.413+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:06:21.405+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:06:21.416+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:06:21.456+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.301 seconds
+[2023-03-07T23:06:51.618+0000] {processor.py:153} INFO - Started process (PID=347) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:06:51.623+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:06:51.627+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:06:51.626+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:06:52.444+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:06:52.438+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:06:52.446+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:06:52.480+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.871 seconds
+[2023-03-07T23:07:22.909+0000] {processor.py:153} INFO - Started process (PID=419) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:07:22.914+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:07:22.916+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:07:22.916+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:07:23.863+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:07:23.857+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:07:23.865+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:07:23.894+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.993 seconds
+[2023-03-07T23:07:53.979+0000] {processor.py:153} INFO - Started process (PID=494) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:07:53.986+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:07:53.989+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:07:53.989+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:07:55.348+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:07:55.336+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:07:55.351+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:07:55.398+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.428 seconds
+[2023-03-07T23:10:53.393+0000] {processor.py:153} INFO - Started process (PID=48) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:10:53.418+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:10:53.426+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:10:53.424+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:10:55.661+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:10:55.645+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:10:55.665+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:10:55.734+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.356 seconds
+[2023-03-07T23:11:26.709+0000] {processor.py:153} INFO - Started process (PID=117) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:11:26.721+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:11:26.746+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:11:26.745+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:11:29.133+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:11:29.109+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:11:29.142+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:11:30.001+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.377 seconds
+[2023-03-07T23:12:00.714+0000] {processor.py:153} INFO - Started process (PID=187) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:12:00.726+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:12:00.735+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:12:00.735+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:12:03.601+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:12:03.591+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:12:03.609+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:12:03.663+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.966 seconds
+[2023-03-07T23:12:34.523+0000] {processor.py:153} INFO - Started process (PID=256) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:12:34.528+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:12:34.532+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:12:34.531+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:12:35.416+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:12:35.405+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:12:35.419+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:12:35.461+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.949 seconds
+[2023-03-07T23:13:06.180+0000] {processor.py:153} INFO - Started process (PID=331) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:13:06.183+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:13:06.188+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:13:06.188+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:13:06.791+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:13:06.781+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:13:06.793+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:13:06.828+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.654 seconds
+[2023-03-07T23:13:37.552+0000] {processor.py:153} INFO - Started process (PID=402) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:13:37.556+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:13:37.560+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:13:37.560+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:13:38.222+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:13:38.213+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:13:38.225+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:13:38.509+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.965 seconds
+[2023-03-07T23:14:09.463+0000] {processor.py:153} INFO - Started process (PID=475) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:14:09.470+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:14:09.475+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:14:09.475+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:14:10.985+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:14:10.962+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:14:10.991+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:14:11.080+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.628 seconds
+[2023-03-07T23:14:41.425+0000] {processor.py:153} INFO - Started process (PID=548) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:14:41.428+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:14:41.433+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:14:41.432+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:14:42.164+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:14:42.154+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:14:42.166+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:14:42.212+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.797 seconds
+[2023-03-07T23:15:13.112+0000] {processor.py:153} INFO - Started process (PID=629) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:15:13.117+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:15:13.120+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:15:13.120+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:15:13.948+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:15:13.940+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:15:13.952+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:15:13.994+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.892 seconds
+[2023-03-07T23:15:44.167+0000] {processor.py:153} INFO - Started process (PID=703) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:15:44.182+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:15:44.186+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:15:44.185+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:15:45.061+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:15:45.053+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:15:45.063+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:15:45.331+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.177 seconds
+[2023-03-07T23:16:15.408+0000] {processor.py:153} INFO - Started process (PID=776) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:16:15.411+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:16:15.413+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:16:15.413+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:16:16.267+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:16:16.258+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:16:16.269+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:16:16.303+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.902 seconds
+[2023-03-07T23:16:46.926+0000] {processor.py:153} INFO - Started process (PID=847) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:16:46.933+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:16:46.937+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:16:46.936+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:16:47.815+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:16:47.805+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:16:47.822+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:16:47.981+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.063 seconds
+[2023-03-07T23:17:18.558+0000] {processor.py:153} INFO - Started process (PID=918) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:17:18.565+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:17:18.569+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:17:18.568+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:17:19.740+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:17:19.729+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:17:19.743+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:17:19.790+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.248 seconds
+[2023-03-07T23:17:49.990+0000] {processor.py:153} INFO - Started process (PID=988) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:17:49.993+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:17:49.998+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:17:49.997+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:17:50.969+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:17:50.946+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:17:50.978+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:17:51.452+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.469 seconds
+[2023-03-07T23:21:23.004+0000] {processor.py:153} INFO - Started process (PID=70) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:21:23.010+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:21:23.014+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:21:23.013+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:21:25.968+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:21:25.950+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:21:25.976+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:21:26.060+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.083 seconds
+[2023-03-07T23:21:56.585+0000] {processor.py:153} INFO - Started process (PID=141) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:21:56.590+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:21:56.595+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:21:56.594+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:21:58.209+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:21:58.195+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:21:58.213+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:21:58.279+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.732 seconds
+[2023-03-07T23:22:28.470+0000] {processor.py:153} INFO - Started process (PID=212) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:22:28.474+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:22:28.478+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:22:28.477+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:22:29.376+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:22:29.367+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:22:29.379+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:22:29.410+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.952 seconds
+[2023-03-07T23:23:00.246+0000] {processor.py:153} INFO - Started process (PID=283) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:23:00.249+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:23:00.252+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:23:00.252+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:23:01.196+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:23:01.190+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:23:01.198+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:23:01.228+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.995 seconds
+[2023-03-07T23:23:31.387+0000] {processor.py:153} INFO - Started process (PID=357) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:23:31.394+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:23:31.397+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:23:31.397+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:23:32.585+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:23:32.570+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:23:32.593+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:23:32.656+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.278 seconds
+[2023-03-07T23:24:02.949+0000] {processor.py:153} INFO - Started process (PID=430) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:24:02.958+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:24:02.961+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:24:02.961+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:24:04.813+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:24:04.798+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:24:04.819+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:24:04.878+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.938 seconds
+[2023-03-07T23:24:35.784+0000] {processor.py:153} INFO - Started process (PID=504) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:24:35.788+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:24:35.792+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:24:35.792+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:24:36.946+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:24:36.940+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:24:36.950+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:24:36.992+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.218 seconds
+[2023-03-07T23:25:07.818+0000] {processor.py:153} INFO - Started process (PID=578) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:25:07.824+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:25:07.829+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:25:07.828+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:25:09.302+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:25:09.294+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:25:09.306+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:25:09.351+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.552 seconds
+[2023-03-07T23:25:39.721+0000] {processor.py:153} INFO - Started process (PID=652) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:25:39.727+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:25:39.730+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:25:39.730+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:25:41.106+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:25:41.098+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:25:41.108+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:25:41.156+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.452 seconds
+[2023-03-07T23:26:11.431+0000] {processor.py:153} INFO - Started process (PID=733) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:26:11.439+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:26:11.443+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:26:11.442+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:26:12.707+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:26:12.696+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:26:12.711+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:26:12.761+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.341 seconds
+[2023-03-07T23:26:44.209+0000] {processor.py:153} INFO - Started process (PID=805) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:26:44.218+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:26:44.234+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:26:44.224+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:26:47.744+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:26:47.703+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:26:47.748+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:26:47.880+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.708 seconds
+[2023-03-07T23:27:18.200+0000] {processor.py:153} INFO - Started process (PID=869) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:27:18.208+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:27:18.213+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:27:18.212+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:27:19.453+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:27:19.445+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:27:19.457+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:27:19.496+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.306 seconds
+[2023-03-07T23:27:49.919+0000] {processor.py:153} INFO - Started process (PID=949) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:27:49.925+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:27:49.928+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:27:49.928+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:27:51.152+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:27:51.144+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:27:51.156+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:27:51.198+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.290 seconds
+[2023-03-07T23:28:21.605+0000] {processor.py:153} INFO - Started process (PID=1021) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:28:21.609+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:28:21.626+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:28:21.626+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:28:22.821+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:28:22.813+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:28:22.824+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:28:22.866+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.276 seconds
+[2023-03-07T23:28:53.191+0000] {processor.py:153} INFO - Started process (PID=1094) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:28:53.195+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:28:53.198+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:28:53.198+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:28:54.228+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:28:54.219+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:28:54.233+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:28:54.318+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.136 seconds
+[2023-03-07T23:29:24.750+0000] {processor.py:153} INFO - Started process (PID=1165) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:29:24.753+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:29:24.756+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:29:24.756+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:29:25.739+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:29:25.727+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:29:25.742+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:29:25.789+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.048 seconds
+[2023-03-07T23:29:56.569+0000] {processor.py:153} INFO - Started process (PID=1236) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:29:56.574+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:29:56.584+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:29:56.584+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:29:58.834+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:29:58.820+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:29:58.839+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:29:58.888+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.334 seconds
+[2023-03-07T23:30:29.209+0000] {processor.py:153} INFO - Started process (PID=1306) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:30:29.212+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:30:29.216+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:30:29.216+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:30:30.221+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:30:30.212+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:30:30.224+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:30:30.267+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.065 seconds
+[2023-03-07T23:31:00.548+0000] {processor.py:153} INFO - Started process (PID=1376) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:31:00.553+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:31:00.558+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:31:00.557+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:31:02.087+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:31:02.071+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:31:02.096+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:31:02.154+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.616 seconds
+[2023-03-07T23:31:32.898+0000] {processor.py:153} INFO - Started process (PID=1447) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:31:32.901+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:31:32.905+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:31:32.905+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:31:33.923+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:31:33.917+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:31:33.926+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:31:33.964+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.078 seconds
+[2023-03-07T23:32:04.664+0000] {processor.py:153} INFO - Started process (PID=1519) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:32:04.668+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:32:04.671+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:32:04.671+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:32:05.667+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:32:05.661+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:32:05.670+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:32:05.705+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.054 seconds
+[2023-03-07T23:32:36.284+0000] {processor.py:153} INFO - Started process (PID=1591) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:32:36.288+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:32:36.298+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:32:36.297+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:32:37.755+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:32:37.745+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:32:37.763+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:32:37.831+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.561 seconds
+[2023-03-07T23:33:08.162+0000] {processor.py:153} INFO - Started process (PID=1663) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:33:08.166+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:33:08.169+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:33:08.169+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:33:09.112+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:33:09.104+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:33:09.114+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:33:09.161+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.009 seconds
+[2023-03-07T23:41:16.991+0000] {processor.py:153} INFO - Started process (PID=50) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:41:17.011+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:41:17.016+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:41:17.015+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:41:18.790+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:41:18.781+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:41:18.793+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:41:18.879+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.908 seconds
+[2023-03-07T23:41:51.438+0000] {processor.py:153} INFO - Started process (PID=121) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:41:51.448+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:41:51.452+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:41:51.452+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:41:52.702+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:41:52.687+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:41:52.707+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:41:53.172+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.747 seconds
+[2023-03-07T23:42:23.688+0000] {processor.py:153} INFO - Started process (PID=193) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:42:23.695+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:42:23.701+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:42:23.701+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:42:25.079+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:42:25.070+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:42:25.084+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:42:25.134+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.457 seconds
+[2023-03-07T23:42:55.921+0000] {processor.py:153} INFO - Started process (PID=261) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:42:55.930+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:42:55.937+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:42:55.936+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:42:57.868+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:42:57.842+0000] {dagbag.py:343} ERROR - Failed to import: /opt/airflow/dags/history.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 339, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/history.py", line 14, in <module>
+    from bigquery_load import data_dir
+  File "/opt/airflow/dags/bigquery_load.py", line 10, in <module>
+    from pydrive.auth import GoogleAuth
+ModuleNotFoundError: No module named 'pydrive'
+[2023-03-07T23:42:57.871+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:42:57.957+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.054 seconds
+[2023-03-07T23:43:28.187+0000] {processor.py:153} INFO - Started process (PID=322) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:43:28.195+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:43:28.200+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:43:28.199+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:43:29.647+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:43:29.668+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.509 seconds
+[2023-03-07T23:44:17.325+0000] {processor.py:153} INFO - Started process (PID=404) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:44:17.364+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:44:17.381+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:44:17.380+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:44:25.353+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:44:25.472+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 8.278 seconds
+[2023-03-07T23:45:33.777+0000] {processor.py:153} INFO - Started process (PID=486) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:45:33.786+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:45:33.792+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:45:33.792+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:45:37.509+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:45:37.545+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.789 seconds
+[2023-03-07T23:46:14.252+0000] {processor.py:153} INFO - Started process (PID=557) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:46:14.259+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:46:14.265+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:46:14.264+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:46:17.723+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:46:17.756+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.542 seconds
+[2023-03-07T23:46:48.152+0000] {processor.py:153} INFO - Started process (PID=626) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:46:48.181+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:46:48.215+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:46:48.194+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:46:53.498+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:46:53.530+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 5.433 seconds
+[2023-03-07T23:47:24.173+0000] {processor.py:153} INFO - Started process (PID=692) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:47:24.270+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:47:24.311+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:47:24.303+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:47:31.026+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:47:31.058+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 6.986 seconds
+[2023-03-07T23:48:01.391+0000] {processor.py:153} INFO - Started process (PID=764) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:48:01.409+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:48:01.423+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:48:01.423+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:48:05.061+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:48:05.084+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.745 seconds
+[2023-03-07T23:48:35.606+0000] {processor.py:153} INFO - Started process (PID=826) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:48:35.618+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:48:35.627+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:48:35.626+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:48:37.982+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:48:38.009+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.418 seconds
+[2023-03-07T23:49:08.852+0000] {processor.py:153} INFO - Started process (PID=897) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:49:08.865+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:49:08.870+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:49:08.869+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:49:11.086+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:49:11.106+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.280 seconds
+[2023-03-07T23:49:41.677+0000] {processor.py:153} INFO - Started process (PID=969) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:49:41.689+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:49:41.695+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:49:41.694+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:49:47.021+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:49:47.046+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 5.404 seconds
+[2023-03-07T23:50:17.593+0000] {processor.py:153} INFO - Started process (PID=1037) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:50:17.605+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:50:17.620+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:50:17.619+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:50:21.440+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:50:21.470+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.904 seconds
+[2023-03-07T23:50:52.345+0000] {processor.py:153} INFO - Started process (PID=1099) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:50:52.412+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:50:52.459+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:50:52.449+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:50:55.576+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:50:55.595+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.283 seconds
+[2023-03-07T23:51:26.431+0000] {processor.py:153} INFO - Started process (PID=1172) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:51:26.438+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:51:26.443+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:51:26.442+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:51:28.390+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:51:28.412+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.997 seconds
+[2023-03-07T23:51:58.548+0000] {processor.py:153} INFO - Started process (PID=1244) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:51:58.556+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:51:58.559+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:51:58.559+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:52:00.712+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:52:00.728+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.192 seconds
+[2023-03-07T23:52:31.138+0000] {processor.py:153} INFO - Started process (PID=1312) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:52:31.152+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:52:31.163+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:52:31.162+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:52:35.160+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:52:35.318+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 4.213 seconds
+[2023-03-07T23:53:06.073+0000] {processor.py:153} INFO - Started process (PID=1377) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:53:06.077+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:53:06.079+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:53:06.079+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:53:07.032+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:53:07.044+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 0.982 seconds
+[2023-03-07T23:53:38.793+0000] {processor.py:153} INFO - Started process (PID=1452) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:53:38.802+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:53:38.809+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:53:38.808+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:53:44.402+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:53:44.470+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 5.695 seconds
+[2023-03-07T23:54:14.750+0000] {processor.py:153} INFO - Started process (PID=1524) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:54:14.774+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:54:14.784+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:54:14.783+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:54:16.981+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:54:16.998+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.299 seconds
+[2023-03-07T23:54:47.669+0000] {processor.py:153} INFO - Started process (PID=1595) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:54:47.685+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:54:47.689+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:54:47.689+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:54:51.226+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:54:51.248+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.627 seconds
+[2023-03-07T23:55:21.703+0000] {processor.py:153} INFO - Started process (PID=1662) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:55:21.712+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:55:21.722+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:55:21.721+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:55:25.520+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:55:25.549+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.872 seconds
+[2023-03-07T23:55:56.262+0000] {processor.py:153} INFO - Started process (PID=1727) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:55:56.267+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:55:56.272+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:55:56.271+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:55:58.963+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:55:58.996+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.746 seconds
+[2023-03-07T23:56:29.306+0000] {processor.py:153} INFO - Started process (PID=1800) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:56:29.310+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:56:29.313+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:56:29.313+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:56:30.958+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:56:30.972+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.675 seconds
+[2023-03-07T23:57:01.302+0000] {processor.py:153} INFO - Started process (PID=1871) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:57:01.308+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:57:01.312+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:57:01.311+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:57:02.988+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:57:03.004+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.714 seconds
+[2023-03-07T23:57:33.980+0000] {processor.py:153} INFO - Started process (PID=1944) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:57:33.990+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:57:34.000+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:57:33.999+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:57:37.198+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:57:37.224+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.265 seconds
+[2023-03-07T23:58:07.441+0000] {processor.py:153} INFO - Started process (PID=2018) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:58:07.447+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:58:07.454+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:58:07.453+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:58:09.343+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:58:09.376+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 1.946 seconds
+[2023-03-07T23:58:40.042+0000] {processor.py:153} INFO - Started process (PID=2082) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:58:40.047+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:58:40.052+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:58:40.051+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:58:42.664+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:58:42.690+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 2.679 seconds
+[2023-03-07T23:59:17.169+0000] {processor.py:153} INFO - Started process (PID=2147) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:59:17.175+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:59:17.180+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:59:17.179+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:59:20.647+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:59:20.687+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 3.580 seconds
+[2023-03-07T23:59:51.439+0000] {processor.py:153} INFO - Started process (PID=2218) to work on /opt/airflow/dags/history.py
+[2023-03-07T23:59:51.450+0000] {processor.py:743} INFO - Processing file /opt/airflow/dags/history.py for tasks to queue
+[2023-03-07T23:59:51.461+0000] {logging_mixin.py:137} INFO - [2023-03-07T23:59:51.459+0000] {dagbag.py:538} INFO - Filling up the DagBag from /opt/airflow/dags/history.py
+[2023-03-07T23:59:55.560+0000] {processor.py:755} WARNING - No viable dags retrieved from /opt/airflow/dags/history.py
+[2023-03-07T23:59:55.693+0000] {processor.py:175} INFO - Processing /opt/airflow/dags/history.py took 4.287 seconds

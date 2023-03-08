@@ -1,0 +1,24 @@
+[2023-03-07T23:48:35.956+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bitcoin_second_webscrape.create_dataset manual__2023-03-07T23:47:42.922440+00:00 [queued]>
+[2023-03-07T23:48:35.997+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bitcoin_second_webscrape.create_dataset manual__2023-03-07T23:47:42.922440+00:00 [queued]>
+[2023-03-07T23:48:36.003+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-07T23:48:36.007+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-03-07T23:48:36.009+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-07T23:48:36.086+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): create_dataset> on 2023-03-07 23:47:42.922440+00:00
+[2023-03-07T23:48:36.113+0000] {standard_task_runner.py:55} INFO - Started process 434 to run task
+[2023-03-07T23:48:36.137+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'bitcoin_second_webscrape', 'create_dataset', 'manual__2023-03-07T23:47:42.922440+00:00', '--job-id', '177', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpjfbtsrrp']
+[2023-03-07T23:48:36.141+0000] {standard_task_runner.py:83} INFO - Job 177: Subtask create_dataset
+[2023-03-07T23:48:36.383+0000] {task_command.py:388} INFO - Running <TaskInstance: bitcoin_second_webscrape.create_dataset manual__2023-03-07T23:47:42.922440+00:00 [running]> on host cd114ba8c1f8
+[2023-03-07T23:48:36.628+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bitcoin_second_webscrape
+AIRFLOW_CTX_TASK_ID=create_dataset
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-07T23:47:42.922440+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2023-03-07T23:47:42.922440+00:00
+[2023-03-07T23:48:37.153+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-07T23:48:37.220+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=bitcoin_second_webscrape, task_id=create_dataset, execution_date=20230307T234742, start_date=20230307T234835, end_date=20230307T234837
+[2023-03-07T23:48:37.354+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-03-07T23:48:37.674+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
