@@ -36,18 +36,24 @@
 ## Description
 
 This project creates a ETL pipeline leveraging Airflow to orchestrate the below flow:
+
+#### 1st DAG: `bitcoin_first_webscrape`:
+
+<img src="imgs/dag_1.png" alt="dag_1" width="750"/>
+
    1. Extracting historical Bitcoin prices from [Bitcoin Stock Data](https://www.kaggle.com/datasets/deepakvedantam/bitcoin-stock-data) and [Investing.com Bitcoin historical data](https://www.investing.com/crypto/bitcoin/historical-data) and then cleans, transformations and consolidates the data to the format needed.
    2. The first DAG is kicked off at the opening bell of the stock market. It completes step 1, then webscrapes the 'opening price' of Bitcoin from [Crypto pricing from Yahoo! Finance](https://finance.yahoo.com/crypto/), cleans/transforms the data, and adds that to `stg_data.csv`.
+   
+#### 2nd DAG: `bitcoin_second_webscrape`:
 
-    <img src="imgs/dag_1.png" alt="dag_1" width="750"/>
+<img src="imgs/dag_2.png" alt="dag_2" width="750"/>
 
 
-   3. The second DAG is kicked off at the closing bell of the stock market. It webscrapes the 'closing price' of Bitcoin from [Crypto pricing from Yahoo! Finance](https://finance.yahoo.com/crypto/), , cleans/transforms the data, and adds that to `stg_data.csv`.
-   4. Once the two webscrapes have been completed and loaded into the `stg_data.csv`, the data is transformed and appended into the `combined_BTC_hist_pricing.csv` file to consolidate all the pricing.
-   5. Then the process for loading this data to both BigQuery and Google Cloud Storage (GCS) is performed. BigQuery is used to generate visualizations of the data, and GCS is used to get the file available to ChatGPT.
-   6. Once the data is loaded to GCS, a task is created leverage the Openai API for ChatGPT where a request is submitted to get a prediction of the closing price of Bitcoin for the following day.
+   1. The second DAG is kicked off at the closing bell of the stock market. It webscrapes the 'closing price' of Bitcoin from [Crypto pricing from Yahoo! Finance](https://finance.yahoo.com/crypto/), , cleans/transforms the data, and adds that to `stg_data.csv`.
+   2. Once the two webscrapes have been completed and loaded into the `stg_data.csv`, the data is transformed and appended into the `combined_BTC_hist_pricing.csv` file to consolidate all the pricing.
+   3. Then the process for loading this data to both BigQuery and Google Cloud Storage (GCS) is performed. BigQuery is used to generate visualizations of the data, and GCS is used to get the file available to ChatGPT.
+   4. Once the data is loaded to GCS, a task is created leverage the Openai API for ChatGPT where a request is submitted to get a prediction of the closing price of Bitcoin for the following day.
 
-    <img src="imgs/dag_2.png" alt="dag_2" width="750"/>
    
 Given some of the restrictions around ChatGPT providing predictions, I performed some research regarding potential work arounds and modified this questioning format from a post on [Medium.com](https://medium.com/crypto-blog/asking-the-chatgpt-ai-to-predict-the-future-price-of-bitcoin-87d4f803cf2d), which is outlined below:
 
