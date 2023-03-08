@@ -29,7 +29,6 @@ def chat_gpt_prediction():
 
     openai.api_key = config['OPENAI_API_KEY']
 
-    #df = pd.read_csv(os.path.join(data_dir,'bitcoin_pricing.csv'), header=0)
 
     # Set up the model and prompt
     model_engine = "text-davinci-003"
