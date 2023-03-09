@@ -18,6 +18,8 @@ def chat_gpt_prediction():
     import json
     import numpy as np
     from airflow.models import Variable
+    import smtplib
+    from email.mime.text import MIMEText
 
     _default_config_path = '/opt/airflow/dags/chatgpt.yml'
     CONF_PATH = Variable.get('config_file', default_var=_default_config_path)
@@ -43,4 +45,24 @@ def chat_gpt_prediction():
     )
 
     response = completion.choices[0].text
+
+    def send_email(subject, body, sender, recipients, password):
+        msg = MIMEText(body)
+        msg['Subject'] = subject
+        msg['From'] = sender
+        msg['To'] = ', '.join(recipients)
+        smtp_server = smtplib.SMTP('smtp.gmail.com', 587)
+        smtp_server.starttls()
+        smtp_server.login(sender, password)
+        smtp_server.sendmail(sender, recipients, msg.as_string())
+        smtp_server.quit()
+
+    subject = "ChatGPT Bitcoin Price Prediction"
+    body = response
+    sender = config['GMAIL_EMAIL']
+    recipients = [config['GMAIL_EMAIL'], config['GMAIL_EMAIL2']]
+    password = config['GMAIL_PASSWORD']
+
+    send_email(subject, body, sender, recipients, password)
+
     return response
