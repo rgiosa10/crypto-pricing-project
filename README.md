@@ -18,7 +18,7 @@
 [License](#license)
 
 ## Summary 
-This repo showcases ETL pipeline for cleaning up historical Bitcoin price data, and webscraping new data in order to get some fun predictions of the future price of Bitcoin from ChatGPT emailed to you. 
+This repo showcases ETL pipeline for cleaning/transforming historical Bitcoin price data, and webscraping new data going forward in order for [ChatGPT](https://chat.openai.com/chat) to analyze and email you some fun predictions of the future price of Bitcoin. 
 
 <br>
 
