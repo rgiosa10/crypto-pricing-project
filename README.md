@@ -67,7 +67,7 @@ This project creates a ETL pipeline leveraging Airflow to orchestrate the below 
    2. Once the two webscrapes have been completed and loaded into the `stg_data.csv`, the data is transformed and appended into the `combined_BTC_hist_pricing.csv` file to consolidate all the pricing.
    3. Then the process for loading this data to both `BigQuery` and `Google Cloud Storage` (GCS) is performed. `BigQuery` is used to generate visualizations of the data, and GCS is used to get the file available to ChatGPT.
    4. Once the data is loaded to GCS, a task is created leverage the `Openai API` for ChatGPT where a request is submitted to get a prediction of the closing price of Bitcoin for the following day.
-   5. Finally, that result is returned into the Airflow logs, with an email sent to the user with the results. Below is a snapshot of an example email sent out:
+   5. Finally, that result is returned into the Airflow logs, with an email sent to the user with the results. For the email I used the `smtplib` to link to a Gmail account. Below is a snapshot of an example email sent out:
 
 <br>
 
