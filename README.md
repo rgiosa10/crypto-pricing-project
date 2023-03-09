@@ -6,7 +6,19 @@
 
 <img src="imgs/banner.png" alt="banner" width="1280x320px"/>
 
-#### This repo showcases ETL pipeline for cleaning up historical Bitcoin price data, and webscraping new data in order to get some fun predictions of the future price of Bitcoin from ChatGPT emailed to you. 
+## Contents
+[Summary](#summary) |
+[Technologies Used](#technologies-used) |
+[Datasets Used](#datasets-used) |
+[Description](#description) |
+[ChatGPT Prediction Examples](#chatgpt-prediction-examples) |
+[Visualizations](#visualizations) |
+[Setup](#setup) |
+[Known Bugs](#known-bugs) |
+[License](#license)
+
+## Summary 
+This repo showcases ETL pipeline for cleaning up historical Bitcoin price data, and webscraping new data in order to get some fun predictions of the future price of Bitcoin from ChatGPT emailed to you. 
 
 <br>
 
@@ -103,7 +115,7 @@ Below are some of my thoughts around potential iterations on this project:
 
 <br>
 
-## Setup/Installation Requirements
+## Setup
 
 * Go to https://github.com/rgiosa10/crypto-pricing-project.git to find the specific repository for this website.
 * Then open your terminal. I recommend going to your Desktop directory:
