@@ -27,6 +27,7 @@ This repo showcases ETL pipeline for cleaning/transforming historical Bitcoin pr
 * Python
 * OpenAI API (ChatGPT)
 * Airflow
+* Docker
 * BeautifulSoup
 * BigQuery
 * Google Cloud Storage
