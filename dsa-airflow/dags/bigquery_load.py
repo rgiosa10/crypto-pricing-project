@@ -89,27 +89,12 @@ def create_table():
 
     job.result()
 
+#---------------------------------------------------
+# upload of csv to gcs
+#---------------------------------------------------
 def gcs_upload():
     s_client = storage.Client()
     
     export_bucket = s_client.get_bucket('bitcoin_pricing')
     blob = export_bucket.blob(config['bitcoin_consolidated'])
     blob.upload_from_filename(os.path.join(data_dir,config['bitcoin_consolidated']))
-    
-    
-    #from pydrive.auth import GoogleAuth
-    #from pydrive.drive import GoogleDrive
-    #import os
-
-    #data_dir = './data/'
-
-    #gauth = GoogleAuth()
-    #gauth.LoadCredentialsFile('/opt/airflow/dags/client_secrets.json')
-    #drive = GoogleDrive(gauth)
-
-    #file = drive.CreateFile({'parents': [{'id': '1DDqEwMd87_SP5iLse-Luw3TMwJVLCy3W'}]})
-    #file.SetContentFile(os.path.join(data_dir,'combined_BTC_hist_pricing.csv'))
-    #file.Upload()
-    
-    #delete file
-    #os.remove(os.path.join(data_dir, config['bitcoin_consolidated']))

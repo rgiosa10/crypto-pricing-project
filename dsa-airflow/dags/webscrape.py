@@ -13,18 +13,29 @@ import re
 import json
 import dateutil
 import numpy as np
+
+# local imports
 from bigquery_load import data_dir
 
+#---------------------------------------------------
+# local import of config.yml info
+#---------------------------------------------------
 _default_config_path = '/opt/airflow/dags/config.yml'
 CONF_PATH = Variable.get('config_file', default_var=_default_config_path)
 config: dict = {}
 with open(CONF_PATH) as open_yaml:
     config: dict =  yaml.full_load(open_yaml)
 
+#---------------------------------------------------
+# webscraping site
+#---------------------------------------------------
 crypto = {
     'yahoo' : 'https://finance.yahoo.com/crypto/',
 }
 
+#---------------------------------------------------
+# webscraping function
+#---------------------------------------------------
 def scrape_yahoo():
     data = requests.get(crypto['yahoo']).text
     soup = BeautifulSoup(data,'html.parser')
@@ -88,9 +99,6 @@ def scrape_yahoo():
 
     df.set_index('Symbol', inplace=True)
     
-    #if os.path.isfile('./data/yahoo.csv'):  
-        #df.to_csv('./data/raw_yahoo.csv', header=False, mode='a')
-    #else:
     df.to_csv(os.path.join(data_dir,config['raw_yahoo']), header=True)
 
 
@@ -99,6 +107,9 @@ def symbol_clean(col):
     sym = col_ls[0].strip()
     return sym
 
+#---------------------------------------------------
+# function for open pricing cleaning and transformations
+#---------------------------------------------------
 def open_raw_yahoo_transform():
     raw_y_df = pd.read_csv(os.path.join(data_dir,config['raw_yahoo']), header=0)
 
@@ -157,7 +168,9 @@ def raw_clean_vol(row):
     elif 'B' in row.volume_24h:
         return (float(row.volume_24h.replace('.','').replace('B',''))*1000000000*float(row.close_price))
 
-
+#---------------------------------------------------
+# function for close pricing cleaning and transformations
+#---------------------------------------------------
 def close_raw_yahoo_transform():
     raw_y_df = pd.read_csv(os.path.join(data_dir,config['raw_yahoo']), header=0)
 
@@ -207,7 +220,9 @@ def close_raw_yahoo_transform():
 
     raw_y_df.to_csv(os.path.join(data_dir,config['stg_data']), header=False, mode='a')
 
-
+#---------------------------------------------------
+# function consolidating open and close webscrapes which then appends to historical pricing
+#---------------------------------------------------
 def stg_file_setup():
     df = pd.read_csv(os.path.join(data_dir,config['stg_data']), header=0)
 

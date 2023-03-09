@@ -19,6 +19,7 @@ config: dict = {}
 with open(CONF_PATH) as open_yaml:
     config: dict =  yaml.full_load(open_yaml)
 
+#---------------------------------------------------
 # functions to be used for transformations
 #---------------------------------------------------
 def inv_string_to_date(col):
@@ -43,6 +44,7 @@ def inv_clean_vol(row):
 
 
 def hist_transf():
+    #---------------------------------------------------
     # cleaning and transformations for historical data from kaggle
     #---------------------------------------------------
     old_price_df = pd.read_csv(os.path.join(data_dir,config['kaggle_data']), header=0)
@@ -62,6 +64,7 @@ def hist_transf():
     old_price_df['close'] = old_price_df['close'].map(old_clean_price)
     old_price_df['volume'] = old_price_df['volume'].map(lambda v: float(v))
 
+    #---------------------------------------------------
     # cleaning and transformations for historical data from investing.com
     #---------------------------------------------------
 
@@ -82,6 +85,7 @@ def hist_transf():
     invest_df['close'] = invest_df['close'].map(inv_clean_price)
     invest_df['volume'] = invest_df.apply(inv_clean_vol, axis=1)
 
+    #---------------------------------------------------
     # consolidate historical data into one csv
     #---------------------------------------------------
     hist_df = pd.concat([old_price_df,invest_df])
@@ -90,7 +94,7 @@ def hist_transf():
 
     file_path = os.path.join(data_dir,'combined_BTC_hist_pricing.csv')
 
-    if os.path.exists(file_path):
-        pass
-    else:
-        hist_df.to_csv(file_path, header=True)
+    #if os.path.exists(file_path):
+        #pass
+    #else:
+    hist_df.to_csv(file_path, header=True)

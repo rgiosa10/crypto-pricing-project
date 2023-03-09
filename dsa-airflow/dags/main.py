@@ -19,8 +19,9 @@ from history import hist_transf
 from bigquery_load import create_dataset, create_table, gcs_upload
 from openai_predict import chat_gpt_prediction
 
+#---------------------------------------------------
 # first DAG definition
-# -----------------------------------------
+#---------------------------------------------------
 
 with DAG(
     dag_id='bitcoin_first_webscrape',
@@ -45,23 +46,30 @@ with DAG(
     print(__file__)
     # pre-check task
 
+    #cleaning and transformation of historical datasets
     history_data_task = PythonOperator(
         task_id='get_transform_historical_data',
         python_callable = hist_transf,
         doc_md = hist_transf.__doc__        
     )
 
+    #webscrape of opening pricing
     webscrape_task_1 = PythonOperator(
         task_id='scrape_open_bitcoin_price',
         python_callable = scrape_yahoo,
         doc_md = scrape_yahoo.__doc__        
     )
 
+    #cleaning and transformation of opening pricing webscraped data
     transform_open_pricing_task = PythonOperator(
         task_id='transform_open_webscrape_pricing',
         python_callable = open_raw_yahoo_transform,
         doc_md = open_raw_yahoo_transform.__doc__        
     )
+
+#---------------------------------------------------
+# second DAG definition
+#---------------------------------------------------
 
 with DAG(
     dag_id='bitcoin_second_webscrape',
@@ -86,30 +94,26 @@ with DAG(
     print(__file__)
     # pre-check task
 
+    #webscrape of closing pricing
     webscrape_task_2 = PythonOperator(
         task_id='scrape_close_bitcoin_price',
         python_callable = scrape_yahoo,
         doc_md = scrape_yahoo.__doc__        
     )
 
+    #cleaning and transformation of closing pricing webscraped data
     transform_close_pricing = PythonOperator(
         task_id='transform_close_webscrape_pricing',
         python_callable = close_raw_yahoo_transform,
         doc_md = close_raw_yahoo_transform.__doc__        
     )
 
+    #creation and transformation of webscraped data that is appended to historical
     stg_file_creation = PythonOperator(
         task_id='combine_open_close_pricing',
         python_callable = stg_file_setup,
         doc_md = stg_file_setup.__doc__
     )
-
-    #create_outputs_data_dir_task
-    #create_outputs_data_dir_task = PythonOperator(
-        #task_id='create_outputs_data_dir_task',
-        #python_callable = create_data_outputs,
-        #doc_md = create_data_outputs.__doc__        
-    #)
 
     #create_bq_dataset_task
     create_dataset_task = PythonOperator(
@@ -125,36 +129,14 @@ with DAG(
         doc_md = create_table.__doc__        
     )
 
+    #upload of csv to gcs
     gcs_upload_task = PythonOperator(
         task_id='gcs_csv_file_upload',
         python_callable = gcs_upload,
         doc_md = gcs_upload.__doc__        
     )
     
-    #PythonVirtualenvOperator(
-       # task_id='google_drive_upload',
-       # python_callable = google_drive_upload,
-       # requirements=[
-                    #'selenium', 
-                   # 'pandas',
-                   # 'gcsfs',
-                   # 'fsspec',
-                   # 'google-cloud-storage',
-                   # 'google-cloud-bigquery',
-                   # 'google-auth',
-                   # 'beautifulsoup4',
-                    #'lxml',
-                    #'html5lib',
-                    #'pytz',
-                    #'tzwhere',
-                   # 'apache-airflow-providers-google',
-                   # 'apache-airflow[google]',
-                   # 'openai',
-                   # 'pydrive'
-                   # ],
-        #doc_md = google_drive_upload.__doc__        
-    #)
-
+    #submission of prompt to ChatGPT with emailed response
     chatgpt_prediction_task = PythonVirtualenvOperator(
         task_id='chatgpt_prediction',
         python_callable = chat_gpt_prediction,
@@ -171,8 +153,10 @@ with DAG(
                    ],
         doc_md = chat_gpt_prediction.__doc__        
     )
+#---------------------------------------------------
+# task flow
+#---------------------------------------------------
 
-#task flow
 history_data_task >> webscrape_task_1 >> transform_open_pricing_task
 
 webscrape_task_2 >> transform_close_pricing >> stg_file_creation >> create_dataset_task >> create_table_task >> gcs_upload_task >> chatgpt_prediction_task
