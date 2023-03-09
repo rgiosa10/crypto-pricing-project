@@ -4,7 +4,7 @@
 
 <br>
 
-<img src="imgs/banner.png" alt="banner" width="1280x320px"/>
+<img src="imgs/banner_2.png" alt="banner" width="1280x320px"/>
 
 ## Contents
 [Summary](#summary) |
