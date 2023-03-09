@@ -27,6 +27,7 @@ def chat_gpt_prediction():
     with open(CONF_PATH) as open_yaml:
         config: dict =  yaml.full_load(open_yaml)
 
+    #Openai API key setup for ChatGPT
     openai.api_key = config['OPENAI_API_KEY']
 
 
@@ -46,6 +47,7 @@ def chat_gpt_prediction():
 
     response = completion.choices[0].text
 
+    #send email with ChatGPT response
     def send_email(subject, body, sender, recipients, password):
         msg = MIMEText(body)
         msg['Subject'] = subject
@@ -57,8 +59,9 @@ def chat_gpt_prediction():
         smtp_server.sendmail(sender, recipients, msg.as_string())
         smtp_server.quit()
 
-    subject = "ChatGPT Bitcoin Price Prediction"
-    body = response
+    # email details
+    subject = f"ChatGPT Bitcoin Price Prediction: {datetime.now()}"
+    body = f'Hi,\n \nThank you for signing up to receive ChatGPT bitcoin price predictions. Below is your latest prediction:\n \n{response}'
     sender = config['GMAIL_EMAIL']
     recipients = [config['GMAIL_EMAIL'], config['GMAIL_EMAIL2']]
     password = config['GMAIL_PASSWORD']
