@@ -2,11 +2,11 @@
 
 #### By [Ruben Giosa](https://www.linkedin.com/in/rubengiosa/)
 
-#### This repo showcases ETL pipeline for cleaning up historical Bitcoin price data, and webscraping new data in order to get some fun predictions of the future price of Bitcoin from ChatGPT emailed to you. 
-
 <br>
 
-<img src="imgs/banner.png" alt="banner" width="850"/>
+<img src="imgs/banner.png" alt="banner" width="1280x320px"/>
+
+#### This repo showcases ETL pipeline for cleaning up historical Bitcoin price data, and webscraping new data in order to get some fun predictions of the future price of Bitcoin from ChatGPT emailed to you. 
 
 <br>
 
@@ -15,6 +15,7 @@
 * Python
 * OpenAI API (ChatGPT)
 * Airflow
+* BeautifulSoup
 * BigQuery
 * Google Cloud Storage
 * Looker Studio
@@ -22,7 +23,6 @@
 * Pandas
 * Git
 * Markdown
-* `.gitignore`
 * `requirements.txt`
   
 </br>
@@ -53,8 +53,8 @@ This project creates a ETL pipeline leveraging Airflow to orchestrate the below 
 
    1. The second DAG is kicked off at the closing bell of the stock market. It webscrapes the 'closing price' of Bitcoin from [Crypto pricing from Yahoo! Finance](https://finance.yahoo.com/crypto/), , cleans/transforms the data, and adds that to `stg_data.csv`.
    2. Once the two webscrapes have been completed and loaded into the `stg_data.csv`, the data is transformed and appended into the `combined_BTC_hist_pricing.csv` file to consolidate all the pricing.
-   3. Then the process for loading this data to both BigQuery and Google Cloud Storage (GCS) is performed. BigQuery is used to generate visualizations of the data, and GCS is used to get the file available to ChatGPT.
-   4. Once the data is loaded to GCS, a task is created leverage the Openai API for ChatGPT where a request is submitted to get a prediction of the closing price of Bitcoin for the following day.
+   3. Then the process for loading this data to both `BigQuery` and `Google Cloud Storage` (GCS) is performed. `BigQuery` is used to generate visualizations of the data, and GCS is used to get the file available to ChatGPT.
+   4. Once the data is loaded to GCS, a task is created leverage the `Openai API` for ChatGPT where a request is submitted to get a prediction of the closing price of Bitcoin for the following day.
    5. Finally, that result is returned into the Airflow logs, with an email sent to the user with the results. Below is a snapshot of an example email sent out:
 
 <br>
@@ -88,7 +88,7 @@ Something of note, all the predictions have material increases in price in the s
 <br>
 
 ## Data Visualizations:
-In addition to the predictions, the clean datasets were cleaned, transformed, consolidated, and then loaded to BigQuery where I then leveraged Looker Studio to create a data visualization.
+In addition to the predictions, the clean datasets were cleaned, transformed, consolidated, and then loaded to BigQuery where I then leveraged `Looker Studio` to create a data visualization.
 
 Below is a line graph that allows a user to look at opening and closing prices of Bitcoin prices by year (click on image of chart to use dashboard):
 
@@ -96,8 +96,8 @@ Below is a line graph that allows a user to look at opening and closing prices o
 
 Note: Due to the use of webscraping I ended up elimating the daily low and high prices. These are important data points that would help to create more accurate predictions, but based on the webscraping being down for open and close I had them removed. I plan to refactor/create another version of this project in the future that will incorporate additional data points to help provide additional data points to ChatGPT to test for results.
 
-Below are some of my thoughts around iterating on this project:
-* ChatGPT vs Google's Vertex AI (using regression ML model) to see who is more accurate
+Below are some of my thoughts around potential iterations on this project:
+* OpenAI's ChatGPT vs Google's Vertex AI (using regression ML model) to see who is more accurate
 * Including additional data points for ChatGPT (or DAN) to better inform the predictions.
 * Create a front end website that allows for on demand predictions
 
