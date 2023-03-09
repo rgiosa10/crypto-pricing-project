@@ -1,0 +1,24 @@
+[2023-03-09T16:22:49.063+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bitcoin_first_webscrape.get_transform_historical_data scheduled__2023-03-08T06:30:00+00:00 [queued]>
+[2023-03-09T16:22:49.081+0000] {taskinstance.py:1083} INFO - Dependencies all met for <TaskInstance: bitcoin_first_webscrape.get_transform_historical_data scheduled__2023-03-08T06:30:00+00:00 [queued]>
+[2023-03-09T16:22:49.083+0000] {taskinstance.py:1279} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-09T16:22:49.084+0000] {taskinstance.py:1280} INFO - Starting attempt 1 of 1
+[2023-03-09T16:22:49.086+0000] {taskinstance.py:1281} INFO - 
+--------------------------------------------------------------------------------
+[2023-03-09T16:22:49.120+0000] {taskinstance.py:1300} INFO - Executing <Task(PythonOperator): get_transform_historical_data> on 2023-03-08 06:30:00+00:00
+[2023-03-09T16:22:49.142+0000] {standard_task_runner.py:55} INFO - Started process 68 to run task
+[2023-03-09T16:22:49.153+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'bitcoin_first_webscrape', 'get_transform_historical_data', 'scheduled__2023-03-08T06:30:00+00:00', '--job-id', '264', '--raw', '--subdir', 'DAGS_FOLDER/main.py', '--cfg-path', '/tmp/tmpcfu3fqx6']
+[2023-03-09T16:22:49.156+0000] {standard_task_runner.py:83} INFO - Job 264: Subtask get_transform_historical_data
+[2023-03-09T16:22:49.341+0000] {task_command.py:388} INFO - Running <TaskInstance: bitcoin_first_webscrape.get_transform_historical_data scheduled__2023-03-08T06:30:00+00:00 [running]> on host cd114ba8c1f8
+[2023-03-09T16:22:49.483+0000] {taskinstance.py:1509} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_EMAIL=***@example.com
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=bitcoin_first_webscrape
+AIRFLOW_CTX_TASK_ID=get_transform_historical_data
+AIRFLOW_CTX_EXECUTION_DATE=2023-03-08T06:30:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2023-03-08T06:30:00+00:00
+[2023-03-09T16:22:49.819+0000] {python.py:177} INFO - Done. Returned value was: None
+[2023-03-09T16:22:49.847+0000] {taskinstance.py:1323} INFO - Marking task as SUCCESS. dag_id=bitcoin_first_webscrape, task_id=get_transform_historical_data, execution_date=20230308T063000, start_date=20230309T162249, end_date=20230309T162249
+[2023-03-09T16:22:49.929+0000] {local_task_job.py:208} INFO - Task exited with return code 0
+[2023-03-09T16:22:50.031+0000] {taskinstance.py:2578} INFO - 0 downstream tasks scheduled from follow-on schedule check
