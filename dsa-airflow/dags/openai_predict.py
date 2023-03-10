@@ -52,9 +52,9 @@ def chat_gpt_prediction():
         engine=model_engine,
         prompt=prompt,
         max_tokens=1024,
-        n=1,
+        n=1, # How many completions to generate for each prompt.
         stop=None,
-        temperature=0.5,
+        temperature=0.5, #The temperature parameter is the setting in OpenAI that affects the randomness of the output. 
     )
 
     response = completion.choices[0].text
